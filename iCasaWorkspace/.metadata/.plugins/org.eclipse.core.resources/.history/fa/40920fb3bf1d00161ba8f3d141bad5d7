@@ -1,0 +1,422 @@
+package com.example.bimary.follow.me;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.DoubleStream;
+
+import org.example.time.MomentOfTheDay;
+import org.example.time.MomentOfTheDayListener;
+import org.example.time.MomentOfTheDayService;
+
+import fr.liglab.adele.icasa.device.DeviceListener;
+import fr.liglab.adele.icasa.device.GenericDevice;
+import fr.liglab.adele.icasa.device.light.BinaryLight;
+import fr.liglab.adele.icasa.device.light.DimmerLight;
+import fr.liglab.adele.icasa.device.light.Photometer;
+import fr.liglab.adele.icasa.device.presence.PresenceSensor;
+import ter.adele.energySensor.energySensorService;
+
+public class BinaryFollowMeImpl implements DeviceListener, FollowMeConfiguration, MomentOfTheDayListener {
+
+	/**
+	 *******************
+	 * Injected Fields *
+	 *******************
+	 */
+
+	/** Field for binaryLight dependency */
+	private BinaryLight[] binaryLight;
+	/** Field for presenceSensors dependency */
+	private PresenceSensor[] presenceSensors;
+	/** Field for dimmerLights dependency */
+	private DimmerLight[] dimmerLights;
+	/** Field for photometer dependency */
+	private Photometer[] photometer;
+	private energySensorService sensorService;
+
+	/**
+	 *********
+	 * Other *
+	 *********
+	 */
+
+	/**
+	 * User preferences for illuminance
+	 **/
+	public static final String USER_PROP_ILLUMINANCE = "illuminance";
+	public static final String USER_PROP_ILLUMINANCE_VALUE_SOFT = "SOFT";
+	public static final String USER_PROP_ILLUMINANCE_VALUE_MEDIUM = "MEDIUM";
+	public static final String USER_PROP_ILLUMINANCE_VALUE_FULL = "FULL";
+
+	/** The name of the LOCATION property */
+	public static final String LOCATION_PROPERTY_NAME = "Location";
+	/** The name of the location for unknown value */
+	public static final String LOCATION_UNKNOWN = "unknown";
+
+	private String moment;
+	private MomentOfTheDay momentOfTheDay;
+	private int max_lights;
+	private double persentage = 0.5;
+	private boolean onlyDim;
+	private double max_energy;
+	public double binConsumption = 80.0d;
+	public double dimConsumption = 90.0d;
+	private int maxBinLights = 0;
+	private int maxDimLights = 0;
+	/** Field for motdService dependency */
+	private MomentOfTheDayService motdService;
+	/** Field for clock dependency */
+
+	/**
+	 *************************
+	 * Bind - Unbind Methods *
+	 *************************
+	 */
+
+	/** Bind Method for binaryLight dependency */
+	public void bindBinaryLight(BinaryLight binaryLight, Map properties) {
+		System.out.println("bind binary light" + binaryLight.getSerialNumber());
+	}
+
+	/** Unbind Method for binaryLight dependency */
+	public void unbindBinaryLight(BinaryLight binaryLight, Map properties) {
+		System.out.println("unbind binary light" + binaryLight.getSerialNumber());
+	}
+
+	/** Bind Method for presenceSensors dependency */
+	public synchronized void bindPresenceSensors(PresenceSensor presenceSensor, Map properties) {
+		presenceSensor.addListener(this);
+		System.out.println("bind presence sensor" + presenceSensor.getSerialNumber());
+
+	}
+
+	/** Unbind Method for presenceSensors dependency */
+	public synchronized void unbindPresenceSensors(PresenceSensor presenceSensor, Map properties) {
+		presenceSensor.removeListener(this);
+		System.out.println("unbind p.sensor" + presenceSensor.getSerialNumber());
+	}
+
+	/** Bind Method for photometer dependency */
+	public void bindPhotometer(Photometer photometer, Map properties) {
+		// TODO: Add your implementation code here
+	}
+
+	/** Unbind Method for photometer dependency */
+	public void unbindPhotometer(Photometer photometer, Map properties) {
+		// TODO: Add your implementation code here
+	}
+
+	/** Bind Method for dimmerLights dependency */
+	public void bindDimmerLights(DimmerLight dimmerLight, Map properties) {
+		System.out.println("bind dimm light" + dimmerLight.getSerialNumber());
+	}
+
+	/** Unbind Method for dimmerLights dependency */
+	public void unbindDimmerLights(DimmerLight dimmerLight, Map properties) {
+		System.out.println("unbind dimm light" + dimmerLight.getSerialNumber());
+	}
+
+	/** Component Lifecycle Method */
+	public void stop() {
+		motdService.unregister(this);
+		System.out.println("Component stopping...");
+	}
+
+	/** Component Lifecycle Method */
+	public void start() {
+		System.out.println("Component starting...");
+		motdService.register(this);
+
+	}
+
+	@Override
+
+	public void devicePropertyModified(GenericDevice device, String propertyName, Object oldValue, Object newValue) {
+		assert device instanceof PresenceSensor : "device must be a presence sensor";
+		double avail[] = new double[10];
+		// based on that assumption we can cast the generic device without
+		// checking via instanceof
+		PresenceSensor changingSensor = (PresenceSensor) device;
+		int cnt = 0;
+		int cnt2 = 0;
+		boolean off = false;
+		// check the change is related to presence sensing
+
+		if (propertyName.equals(PresenceSensor.PRESENCE_SENSOR_SENSED_PRESENCE)) {
+			// get the location of the changing sensor:
+			String detectorLocation = (String) changingSensor.getPropertyValue(LOCATION_PROPERTY_NAME);
+			System.out.println("The device with the serial number" + changingSensor.getSerialNumber() + " has changed");
+			System.out.println("This sensor was in the room :" + detectorLocation);
+
+			if (!detectorLocation.equals(LOCATION_UNKNOWN)) {
+				sensorService.setLocation(detectorLocation);
+				sensorService.calculateTottalEnergy();
+				// get the related binary and dimmer lights
+
+				List<DimmerLight> sameLocationDimLigths = getDimmerLightFromLocation(detectorLocation);
+				List<BinaryLight> sameLocationBinLigths = getBinaryLightFromLocation(detectorLocation);
+
+				// get available lights consumption inside a room
+
+				for (int i = 0; i < sameLocationBinLigths.size(); i++) {
+					avail[i] = binConsumption;
+				}
+				System.out.println("avail lights consumptions" + Arrays.toString(avail));
+
+				int c = sameLocationBinLigths.size();
+				for (int j = 0; j < sameLocationDimLigths.size(); j++) {
+
+					avail[c + j] = dimConsumption;
+				}
+				System.out.println("avail lights consumptions with dim" + Arrays.toString(avail));
+
+				double[] closest = ClosestSumAlgorithm.greadySubSetClosestSum(max_energy, avail);
+				setMaxBinLights(closest);
+				setMaxDimLights(closest);
+
+				System.out.println("closest sum output: " + Arrays.toString(closest));
+				double sum = DoubleStream.of(closest).sum();
+				System.out.println("sum= " + sum);
+				System.out.println("maxbin: " + getMaxBinLights());
+				System.out.println("maxdim: " + getMaxDimLights());
+				System.out.println("Illuminance by sensor: " + getCurrentIlluminance(detectorLocation));
+
+				for (BinaryLight binaryLight : sameLocationBinLigths) {
+					// and switch them on/off depending on the sensed presence
+					if (cnt < getMaxBinLights()) {
+						binaryLight.setPowerStatus(!(Boolean) oldValue);
+						cnt++;
+					}
+				}
+				for (DimmerLight dimmerLight : sameLocationDimLigths) {
+					// and switch them on/off depending on the sensed presence
+					if (cnt2 < getMaxDimLights()) {
+						double vOut = 0;
+						if (!(boolean) oldValue == true) {
+							vOut = persentage;
+						} else {
+							vOut = 0;
+						}
+
+						dimmerLight.setPowerLevel(vOut);
+						cnt2++;
+
+					}
+				}
+				System.out.println("Illuminance by sensor: " + getCurrentIlluminance(detectorLocation));
+
+			}
+		}
+
+	}
+
+	@Override
+	public void devicePropertyRemoved(GenericDevice arg0, String arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+
+	public void deviceRemoved(GenericDevice arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/**
+	 * Return all BinaryLight from the given location
+	 *
+	 * @param location
+	 *            : the given location
+	 * @return the list of matching BinaryLights
+	 */
+	private synchronized List<BinaryLight> getBinaryLightFromLocation(String location) {
+		List<BinaryLight> binaryLightsLocation = new ArrayList<BinaryLight>();
+		Integer cnt = 0;
+		for (BinaryLight binLight : binaryLight) {
+
+			if (binLight.getPropertyValue(LOCATION_PROPERTY_NAME).equals(location)) {
+				binaryLightsLocation.add(binLight);
+				cnt++;
+				System.out.println("new light" + binLight.getSerialNumber());
+			}
+
+		}
+		return binaryLightsLocation;
+	}
+
+	private synchronized List<DimmerLight> getDimmerLightFromLocation(String location) {
+		List<DimmerLight> dimmerLightsLocation = new ArrayList<DimmerLight>();
+		for (DimmerLight dimlight : dimmerLights) {
+
+			if (dimlight.getPropertyValue(LOCATION_PROPERTY_NAME).equals(location)) {
+				dimmerLightsLocation.add(dimlight);
+
+				System.out.println("new dim light" + dimlight.getSerialNumber());
+			}
+		}
+		return dimmerLightsLocation;
+	}
+
+	public double getCurrentIlluminance(String location) {
+		double val = 0;
+
+		for (Photometer photom : photometer) {
+			if (photom.getPropertyValue(LOCATION_PROPERTY_NAME).equals(location)) {
+
+				val = photom.getIlluminance();
+			}
+		}
+
+		return val;
+	}
+
+	/**
+	 *********************
+	 * Getters - Setters *
+	 *********************
+	 */
+
+	@Override
+	public int getMaximumNumberOfLightsToTurnOn() {
+
+		return this.max_lights;
+	}
+
+	@Override
+	public void setMaximumNumberOfLightsToTurnOn(int maximumNumberOfLightsToTurnOn) {
+		this.max_lights = maximumNumberOfLightsToTurnOn;
+
+	}
+
+	@Override
+	public double getPersentage() {
+		return persentage;
+	}
+
+	@Override
+	public void setPersentage(double persentage) {
+		this.persentage = persentage;
+	}
+
+	@Override
+	public boolean isOnlyDim() {
+		return onlyDim;
+	}
+
+	@Override
+	public void setOnlyDim(boolean onlyDim) {
+		this.onlyDim = onlyDim;
+	}
+
+	@Override
+	public double getMaximumAllowedEnergyInRoom() {
+		return max_energy;
+	}
+
+	@Override
+	public void setMaximumAllowedEnergyInRoom(double max_energy) {
+		this.max_energy = max_energy;
+	}
+
+	public int getMaxBinLights() {
+
+		return this.maxBinLights;
+	}
+
+	public void setMaxBinLights(double[] closest) {
+		this.maxBinLights = 0;
+		for (int i = 0; i < closest.length; i++) {
+			if (closest[i] == binConsumption)
+				this.maxBinLights++;
+		}
+	}
+
+	public int getMaxDimLights() {
+
+		return this.maxDimLights;
+	}
+
+	public void setMaxDimLights(double[] closest) {
+		this.maxDimLights = 0;
+		for (int i = 0; i < closest.length; i++) {
+			if (closest[i] == dimConsumption)
+				this.maxDimLights++;
+		}
+	}
+
+	@Override
+	public double[] getLightsCombination() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 *********
+	 * Other *
+	 *********
+	 */
+
+	@Override
+	public void deviceAdded(GenericDevice arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public MomentOfTheDay getMomentOfTheDay() {
+		return momentOfTheDay;
+	}
+
+	public void setMomentOfTheDay(MomentOfTheDay momentOfTheDay) {
+		this.momentOfTheDay = momentOfTheDay;
+	}
+
+	@Override
+	public void deviceEvent(GenericDevice arg0, Object arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void devicePropertyAdded(GenericDevice arg0, String arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void getPreferance(String USER_PROP_ILLUMINANCE) {
+
+		// String AliceIlm = (String)
+		// preferencesService.getUserPropertyValue("Alice",
+		// USER_PROP_ILLUMINANCE);
+		// return AliceIlm;
+
+	}
+
+	@Override
+	public synchronized void momentOfTheDayHasChanged(MomentOfTheDay newMomentOfTheDay) {
+		setMomentOfTheDay(newMomentOfTheDay);
+
+		switch (newMomentOfTheDay) {
+
+		case "MORNING":
+			
+			break;
+		case "AFTERNOON":
+			illuminanceGoal = IlluminanceGoal.MEDIUM;
+			break;
+		case "EVENING":
+			illuminanceGoal = IlluminanceGoal.FULL;
+			break;
+		case "NIGHT":
+			illuminanceGoal = IlluminanceGoal.FULL;
+			break;
+		default:
+			throw new IllegalArgumentException("Illigal value: " + goal);
+
+		}
+		sensorService.setMotD(moment);
+	}
+
+}

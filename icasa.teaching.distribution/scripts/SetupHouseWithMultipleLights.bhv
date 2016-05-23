@@ -1,0 +1,134 @@
+<behavior startdate="27/10/2011-00:00:00" factor="1">
+
+	
+
+	 
+	<create-zone id="kitchen"  leftX="410" topY="370" X-Length="245" Y-Length="210" />	 
+	<add-zone-variable zoneId="kitchen" variable="Illuminance" />
+	<modify-zone-variable zoneId="kitchen" variable="Illuminance" value="0"/>
+
+	<create-device id="PhotoM-DS496W-S" type="iCasa.Photometer" />
+	<create-device id="BiLi-E7496W-S" type="iCasa.BinaryLight" />
+	<create-device id="Pres-A1255D-D" type="iCasa.PresenceSensor" />
+	<create-device id="BiLi-A7496W-S" type="iCasa.BinaryLight" />
+	<move-device-zone deviceId="Pres-A1255D-D" zoneId="kitchen" />
+	<move-device-zone deviceId="BiLi-A7496W-S" zoneId="kitchen" />
+	<move-device-zone deviceId="BiLi-E7496W-S" zoneId="kitchen" />
+	<move-device-zone deviceId="PhotoM-DS496W-S" zoneId="kitchen" />
+
+
+	
+
+
+	<create-zone id="livingroom" leftX="410" topY="28" X-Length="245" Y-Length="350" />
+	<add-zone-variable zoneId="livingroom" variable="Illuminance" />
+	<modify-zone-variable zoneId="livingroom" variable="Illuminance" value="0"/>
+	
+	<create-device id="PhotoM-CS496W-S" type="iCasa.Photometer" />
+	<create-device id="DiLi-A7496W-S" type="iCasa.DimmerLight" />
+	<create-device id="BiLi-F7496W-S" type="iCasa.BinaryLight" />
+	<create-device id="Pres-B1255D-D" type="iCasa.PresenceSensor" />
+	<create-device id="DiLi-B7496W-S" type="iCasa.DimmerLight" />
+	<move-device-zone deviceId="Pres-B1255D-D" zoneId="livingroom" />
+	<move-device-zone deviceId="DiLi-B7496W-S" zoneId="livingroom" />
+	<move-device-zone deviceId="BiLi-F7496W-S" zoneId="livingroom" />
+	<move-device-zone deviceId="DiLi-A7496W-S" zoneId="livingroom" />
+	<move-device-zone deviceId="PhotoM-CS496W-S" zoneId="livingroom" />
+
+
+
+
+
+	<create-zone id="bedroom"  leftX="55" topY="370" X-Length="259" Y-Length="210" />		
+	<add-zone-variable zoneId="bedroom" variable="Illuminance" />
+	<modify-zone-variable zoneId="bedroom" variable="Illuminance" value="0"/>
+	
+	<create-device id="PhotoM-BS496W-S" type="iCasa.Photometer" />
+	<create-device id="BiLi-G7496W-S" type="iCasa.BinaryLight" />
+	<create-device id="Pres-C1255D-D" type="iCasa.PresenceSensor" />
+	<create-device id="DiLi-C7496W-S" type="iCasa.DimmerLight" />
+	<move-device-zone deviceId="Pres-C1255D-D" zoneId="bedroom" />
+	<move-device-zone deviceId="DiLi-C7496W-S" zoneId="bedroom" />
+	<move-device-zone deviceId="BiLi-G7496W-S" zoneId="bedroom" />
+	<move-device-zone deviceId="PhotoM-BS496W-S" zoneId="bedroom" />
+
+
+
+
+
+
+	
+	<create-zone id="bathroom"  leftX="55" topY="20" X-Length="260" Y-Length="350" />	
+	<add-zone-variable zoneId="bathroom" variable="Illuminance" />
+	<modify-zone-variable zoneId="bathroom" variable="Illuminance" value="0"/>
+
+	<create-device id="PhotoM-AS496W-S" type="iCasa.Photometer" />
+	<create-device id="BiLi-H7496W-S" type="iCasa.BinaryLight" />
+	<create-device id="Pres-D1255D-D" type="iCasa.PresenceSensor" />
+	<create-device id="BiLi-D7496W-S" type="iCasa.BinaryLight" />
+	<move-device-zone deviceId="Pres-D1255D-D" zoneId="bathroom" />
+	<move-device-zone deviceId="BiLi-D7496W-S" zoneId="bathroom" />
+	<move-device-zone deviceId="BiLi-H7496W-S" zoneId="bathroom" />
+	<move-device-zone deviceId="PhotoM-AS496W-S" zoneId="bathroom" />
+
+
+
+
+	 <!-- Creating a Thermometer, a Heater and a Cooler-->
+    <create-device id="Ther-A3654Q-S" type="iCasa.Thermometer" />
+    <create-device id="Heat-A4894S-S" type="iCasa.Heater" />
+    <create-device id="Cool-A7496W-S" type="iCasa.Cooler" />
+    <create-device id="Ther-B3654Q-S" type="iCasa.Thermometer" />
+    <create-device id="Heat-B4894S-S" type="iCasa.Heater" />
+    <create-device id="Cool-B7496W-S" type="iCasa.Cooler" />
+    <create-device id="Ther-C3654Q-S" type="iCasa.Thermometer" />
+    <create-device id="Heat-C4894S-S" type="iCasa.Heater" />
+    <create-device id="Cool-C7496W-S" type="iCasa.Cooler" />
+    <create-device id="Ther-D3654Q-S" type="iCasa.Thermometer" />
+    <create-device id="Heat-D4894S-S" type="iCasa.Heater" />
+    <create-device id="Cool-D7496W-S" type="iCasa.Cooler" />
+ 
+    <!-- kitchen-->
+    <move-device-zone deviceId="Heat-A4894S-S" zoneId="kitchen" />
+    <move-device-zone deviceId="Ther-A3654Q-S" zoneId="kitchen" />
+    <move-device-zone deviceId="Cool-A7496W-S" zoneId="kitchen" />
+
+
+     <!-- bedroom-->
+    <move-device-zone deviceId="Heat-A4894S-S" zoneId="bedroom" />
+    <move-device-zone deviceId="Ther-A3654Q-S" zoneId="bedroom" />
+    <move-device-zone deviceId="Cool-A7496W-S" zoneId="bedroom" />
+
+
+     <!-- livingroom-->
+    <move-device-zone deviceId="Heat-A4894S-S" zoneId="livingroom" />
+    <move-device-zone deviceId="Ther-A3654Q-S" zoneId="livingroom" />
+    <move-device-zone deviceId="Cool-A7496W-S" zoneId="livingroom" />
+
+
+     <!-- bathroom-->
+    <move-device-zone deviceId="Heat-A4894S-S" zoneId="bathroom" />
+    <move-device-zone deviceId="Ther-A3654Q-S" zoneId="bathroom" />
+    <move-device-zone deviceId="Cool-A7496W-S" zoneId="bathroom" />
+
+ 
+    <!-- Configure the temperature in Kelvin  -->
+    <add-zone-variable zoneId="kitchen" variable="Temperature" />
+    <modify-zone-variable zoneId="kitchen" variable="Temperature" value="280.15"/>
+
+    <add-zone-variable zoneId="livingroom" variable="Temperature" />
+    <modify-zone-variable zoneId="livingroom" variable="Temperature" value="250.15"/>
+    
+    <add-zone-variable zoneId="bedroom" variable="Temperature" />
+    <modify-zone-variable zoneId="bedroom" variable="Temperature" value="260.15"/>
+
+    <add-zone-variable zoneId="bathroom" variable="Temperature" />
+    <modify-zone-variable zoneId="bathroom" variable="Temperature" value="240.15"/>
+	
+	
+	
+
+	
+	<create-person id="Paul" type="Grandfather" />
+
+</behavior>

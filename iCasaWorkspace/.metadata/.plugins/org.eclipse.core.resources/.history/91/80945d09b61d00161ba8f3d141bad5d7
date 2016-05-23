@@ -1,0 +1,8 @@
+package ter.adele.energySensor;
+
+public interface energySensorService {
+
+	public double calculateTottalEnergy();
+	public String setLocation();
+	public String getLocation();
+}

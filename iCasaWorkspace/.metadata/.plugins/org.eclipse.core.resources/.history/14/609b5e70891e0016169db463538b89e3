@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="com.example.bimary.follow.me.BinaryFollowMeImpl" name="BinaryFollowMe">
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.light.BinaryLight" field="binaryLight">
+      <callback method="bindBinaryLight" type="bind"/>
+      <callback method="unbindBinaryLight" type="unbind"/>
+    </requires>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.presence.PresenceSensor" field="presenceSensors">
+      <callback method="bindPresenceSensors" type="bind"/>
+      <callback method="unbindPresenceSensors" type="unbind"/>
+    </requires>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.light.DimmerLight" field="dimmerLights">
+      <callback method="bindDimmerLights" type="bind"/>
+      <callback method="unbindDimmerLights" type="unbind"/>
+    </requires>
+    <properties/>
+    <provides specifications="com.example.bimary.follow.me.FollowMeConfiguration"/>
+    <requires aggregate="true" optional="true" specification="fr.liglab.adele.icasa.device.light.Photometer" field="photometer">
+      <callback method="bindPhotometer" type="bind"/>
+      <callback method="unbindPhotometer" type="unbind"/>
+    </requires>
+    <requires specification="org.example.time.MomentOfTheDayService" field="motdService"/>
+    <requires optional="true" specification="ter.adele.energySensor.energySensorService" field="sensorService"/>
+  </component>
+  <instance component="BinaryFollowMe" name="BinaryFollowMe-6"/>
+</ipojo>

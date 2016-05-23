@@ -1,0 +1,46 @@
+package ter.adele.energySensor;
+
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.felix.ipojo.annotations.Component;
+import org.apache.felix.ipojo.annotations.Instantiate;
+import org.apache.felix.ipojo.annotations.Provides;
+import org.apache.felix.ipojo.annotations.Requires;
+
+import com.google.gson.JsonObject;
+
+import fr.liglab.adele.icasa.device.PowerObservable;
+import fr.liglab.adele.icasa.service.scheduler.PeriodicRunnable;
+
+@Component
+@Instantiate
+@Provides
+public class energySensorServiceImpl implements PeriodicRunnable {
+
+	private String MotD;
+
+	
+	public String getMotD() {
+		return MotD;
+	}
+
+	
+	public void setMotD(String motD) {
+		this.MotD = motD;
+	}
+
+
+	/** Component Lifecycle Method */
+	public void stop() {
+		System.out.println("Energy sensor stoped");
+	}
+
+	/** Component Lifecycle Method */
+	public void start() {
+		System.out.println("Energy sensor started");
+	}
+
+	
+
+}

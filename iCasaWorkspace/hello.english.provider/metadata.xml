@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="org.example.hello.provider.HelloProviderImpl" name="English provider">
+    <properties/>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <provides specifications="org.example.hello.service.Hello">
+      <property name="lang" type="java.lang.String" value="en"/>
+    </provides>
+  </component>
+  <instance component="English provider" name="English provider">
+    <property name="lang" value="en"/>
+  </instance>
+  <component classname="org.example.hello.provider.FrenchproviderImpl" name="French provider">
+    <provides specifications="org.example.hello.service.Hello">
+      <property name="lang" type="java.lang.String" value="fr"/>
+    </provides>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+  </component>
+  <instance component="French provider" name="French provider">
+    <property name="lang" value="fr"/>
+  </instance>
+</ipojo>

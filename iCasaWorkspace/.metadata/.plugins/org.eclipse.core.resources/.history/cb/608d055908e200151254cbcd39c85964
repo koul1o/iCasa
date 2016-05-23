@@ -1,0 +1,17 @@
+package com.example.bimary.follow.me;
+
+public class FollowMeConfigImpl implements FollowMeConfiguration {
+
+	@Override
+	public Integer getMaximumNumberOfLightsToTurnOn() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setMaximumNumberOfLightsToTurnOn(int maximumNumberOfLightsToTurnOn) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

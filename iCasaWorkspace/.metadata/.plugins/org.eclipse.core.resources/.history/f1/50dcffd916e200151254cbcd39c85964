@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="com.example.bimary.follow.me.FollowMeConfigImpl" name="FollowMeConfig">
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <properties>
+      <property field="maxLights" name="maxLights" type="java.lang.Integer" value="0"/>
+    </properties>
+    <provides specifications="com.example.bimary.follow.me.FollowMeConfiguration"/>
+  </component>
+  <instance component="FollowMeConfig" name="FollowMeConfig-1">
+    <property name="maxLights" value="2"/>
+  </instance>
+</ipojo>

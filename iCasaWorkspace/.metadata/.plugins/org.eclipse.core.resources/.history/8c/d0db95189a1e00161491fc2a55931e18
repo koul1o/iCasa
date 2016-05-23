@@ -1,0 +1,43 @@
+package fr.liglab.adele.icasa.parent2;
+
+import org.apache.felix.ipojo.annotations.Component;
+import org.apache.felix.ipojo.annotations.Instantiate;
+import org.apache.felix.ipojo.annotations.Provides;
+import org.apache.felix.ipojo.annotations.Requires;
+
+import fr.liglab.adele.icasa.command.handler.Command;
+import fr.liglab.adele.icasa.command.handler.CommandProvider;
+import ter.adele.energySensor.energySensorService;
+
+@Component
+@Instantiate
+@Provides
+/**
+ * Hello world!
+ *
+ */
+@CommandProvider(namespace = "followme")
+public class App {
+	@Requires(optional = true)
+	private energySensorService en;
+
+	@Command
+	public void set(String motD) {
+		en.setMotD(motD);
+	}
+
+	@Command
+	public void getme() {
+		
+		System.out.println("you get "+en.getMotD());
+	}
+
+	public void stop() {
+		System.out.println("Energy sensor stoped");
+	}
+
+	/** Component Lifecycle Method */
+	public void start() {
+		System.out.println("Energy sensor started");
+	}
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="org.example.follow.me.manager.FollowMeManagerImpl" name="Manager">
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <properties/>
+    <provides specifications="org.example.follow.me.manager.FollowMeAdministration"/>
+    <requires optional="true" specification="com.example.bimary.follow.me.FollowMeConfiguration" field="config"/>
+    <requires optional="true" specification="fr.liglab.adele.icasa.service.preferences.Preferences" field="preferencesService"/>
+    <requires optional="true" specification="fr.liglab.adele.icasa.service.location.PersonLocationService" field="personLocationService"/>
+  </component>
+  <instance component="Manager" name="Manager-4"/>
+</ipojo>

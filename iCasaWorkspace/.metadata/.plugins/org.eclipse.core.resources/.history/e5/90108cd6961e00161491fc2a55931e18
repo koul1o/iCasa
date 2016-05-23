@@ -1,0 +1,31 @@
+package fr.liglab.adele.icasa.parent2;
+
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.felix.ipojo.annotations.Component;
+import org.apache.felix.ipojo.annotations.Instantiate;
+import org.apache.felix.ipojo.annotations.Provides;
+import org.apache.felix.ipojo.annotations.Requires;
+
+import com.google.gson.JsonObject;
+
+import fr.liglab.adele.icasa.device.PowerObservable;
+import fr.liglab.adele.icasa.service.scheduler.PeriodicRunnable;
+import ter.adele.energySensor;
+
+@Component
+@Instantiate
+@Provides
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+   
+	
+	
+	
+	
+}

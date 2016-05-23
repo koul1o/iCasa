@@ -1,0 +1,16 @@
+package fr.liglab.adele.icasa.parent2;
+
+import org.apache.felix.ipojo.annotations.Component;
+import org.apache.felix.ipojo.annotations.Instantiate;
+import org.apache.felix.ipojo.annotations.Provides;
+
+@Component
+@Instantiate
+@Provides
+/**
+ * Hello world!
+ *
+ */
+public class App {
+
+}

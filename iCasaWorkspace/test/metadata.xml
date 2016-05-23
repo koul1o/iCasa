@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="fr.test.HelloImpl" name="Hello">
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <requires optional="true" specification="fr.liglab.adele.icasa.device.light.BinaryLight" field="binaryLight"/>
+    <properties>
+      <property field="m_lang" name="lang" type="java.lang.String" value="en"/>
+    </properties>
+  </component>
+  <instance component="Hello" name="Hello-1">
+    <property name="lang" value="fr"/>
+  </instance>
+  <instance component="Hello" name="Hello-2">
+    <property name="lang" value="en"/>
+  </instance>
+  <instance component="Hello" name="Hello-3">
+    <property name="lang" value="gr"/>
+  </instance>
+</ipojo>

@@ -1,0 +1,25 @@
+package com.example.bimary.follow.me;
+
+public class FollowMeConfigImpl implements FollowMeConfiguration {
+
+	/** Injected field for the component property maxLights */
+	private Integer maxLights;
+
+	@Override
+	public Integer getMaximumNumberOfLightsToTurnOn() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setMaximumNumberOfLightsToTurnOn(int maximumNumberOfLightsToTurnOn) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/** Component Lifecycle Method */
+	public void stop(){
+	// TODO: Add your implementation code here
+	}
+
+}

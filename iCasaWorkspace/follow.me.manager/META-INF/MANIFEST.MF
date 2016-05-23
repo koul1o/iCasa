@@ -1,0 +1,73 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Manager
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: follow.me.manager
+Bundle-Version: 1.0.0.qualifier
+Created-By: iPOJO 1.12.1
+Export-Package: org.example.follow.me.manager
+Import-Package: com.example.bimary.follow.me, fr.liglab.adele.icasa, f
+ r.liglab.adele.icasa.access, fr.liglab.adele.icasa.access.command, fr
+ .liglab.adele.icasa.application, fr.liglab.adele.icasa.application.im
+ pl, fr.liglab.adele.icasa.application.impl.command, fr.liglab.adele.i
+ casa.application.remote, fr.liglab.adele.icasa.application.remote.uti
+ l, fr.liglab.adele.icasa.clockservice, fr.liglab.adele.icasa.clockser
+ vice.impl, fr.liglab.adele.icasa.clockservice.util, fr.liglab.adele.i
+ casa.command, fr.liglab.adele.icasa.command.handler, fr.liglab.adele.
+ icasa.commands, fr.liglab.adele.icasa.commands.impl, fr.liglab.adele.
+ icasa.common, fr.liglab.adele.icasa.common.impl, fr.liglab.adele.icas
+ a.common.xml.utils, fr.liglab.adele.icasa.dependency.manager.exceptio
+ n, fr.liglab.adele.icasa.device, fr.liglab.adele.icasa.device.bathroo
+ mscale, fr.liglab.adele.icasa.device.box, fr.liglab.adele.icasa.devic
+ e.button, fr.liglab.adele.icasa.device.button.simulated, fr.liglab.ad
+ ele.icasa.device.doorWindow, fr.liglab.adele.icasa.device.gasSensor, 
+ fr.liglab.adele.icasa.device.light, fr.liglab.adele.icasa.device.mana
+ ger, fr.liglab.adele.icasa.device.motion, fr.liglab.adele.icasa.devic
+ e.power, fr.liglab.adele.icasa.device.presence, fr.liglab.adele.icasa
+ .device.security, fr.liglab.adele.icasa.device.settopbox, fr.liglab.a
+ dele.icasa.device.sound, fr.liglab.adele.icasa.device.sprinkler, fr.l
+ iglab.adele.icasa.device.temperature, fr.liglab.adele.icasa.device.ut
+ il, fr.liglab.adele.icasa.exception, fr.liglab.adele.icasa.frontend.s
+ ervices, fr.liglab.adele.icasa.frontend.services.rest, fr.liglab.adel
+ e.icasa.frontend.services.utils, fr.liglab.adele.icasa.listener, fr.l
+ iglab.adele.icasa.location, fr.liglab.adele.icasa.location.impl, fr.l
+ iglab.adele.icasa.location.util, fr.liglab.adele.icasa.remote.wisdom,
+  fr.liglab.adele.icasa.remote.wisdom.util, fr.liglab.adele.icasa.serv
+ ice.location, fr.liglab.adele.icasa.service.preferences, fr.liglab.ad
+ ele.icasa.service.scheduler, fr.liglab.adele.icasa.service.zone.dimen
+ sion.calculator, fr.liglab.adele.icasa.service.zone.size.calculator, 
+ fr.liglab.adele.icasa.simulator, fr.liglab.adele.icasa.simulator.list
+ ener, fr.liglab.adele.icasa.simulator.listener.util, fr.liglab.adele.
+ icasa.simulator.remote.wisdom.util, fr.liglab.adele.icasa.simulator.s
+ cript.executor, fr.liglab.adele.icasa.simulator.services, org.apache.
+ felix.ipojo;version="[1.12.1,2.0.0)", org.apache.felix.ipojo.architec
+ ture;version="[1.12.1,2.0.0)", org.json, org.osgi.service.cm;version=
+ 1.2, org.osgi.service.log;version=1.3
+iPOJO-Components: instance { $component="Manager" $name="Manager-4" }c
+ omponent { $classname="org.example.follow.me.manager.FollowMeManagerI
+ mpl" $name="Manager" callback { $method="start" $transition="validate
+ " }callback { $method="stop" $transition="invalidate" }properties { }
+ provides { $specifications="org.example.follow.me.manager.FollowMeAdm
+ inistration" }requires { $optional="true" $specification="com.example
+ .bimary.follow.me.FollowMeConfiguration" $field="config" }requires { 
+ $optional="true" $specification="fr.liglab.adele.icasa.service.prefer
+ ences.Preferences" $field="preferencesService" }requires { $optional=
+ "true" $specification="fr.liglab.adele.icasa.service.location.PersonL
+ ocationService" $field="personLocationService" }manipulation { $class
+ name="org.example.follow.me.manager.FollowMeManagerImpl" interface { 
+ $name="org.example.follow.me.manager.FollowMeAdministration" }field {
+  $name="config" $type="com.example.bimary.follow.me.FollowMeConfigura
+ tion" }field { $name="energyGoal" $type="org.example.follow.me.manage
+ r.EnergyGoal" }field { $name="illuminanceGoal" $type="org.example.fol
+ low.me.manager.IlluminanceGoal" }field { $name="personLocationService
+ " $type="fr.liglab.adele.icasa.service.location.PersonLocationService
+ " }field { $name="preferencesService" $type="fr.liglab.adele.icasa.se
+ rvice.preferences.Preferences" }method { $name="stop" }method { $name
+ ="start" }method { $name="setIlluminancePreference" $arguments="{org.
+ example.follow.me.manager.IlluminanceGoal}" $names="{illuminanceGoal}
+ " }method { $name="getIlluminancePreference" $return="org.example.fol
+ low.me.manager.IlluminanceGoal" }method { $name="setEnergyGoal" $argu
+ ments="{org.example.follow.me.manager.EnergyGoal}" $names="{energyGoa
+ l}" }method { $name="getEnergyGoal" $return="org.example.follow.me.ma
+ nager.EnergyGoal" }}}
+

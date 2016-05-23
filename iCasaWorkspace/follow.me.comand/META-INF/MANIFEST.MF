@@ -1,0 +1,71 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Comand
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-SymbolicName: follow.me.comand
+Bundle-Version: 1.0.0.qualifier
+Created-By: iPOJO 1.12.1
+Import-Package: com.example.bimary.follow.me, fr.liglab.adele.icasa, f
+ r.liglab.adele.icasa.access, fr.liglab.adele.icasa.access.command, fr
+ .liglab.adele.icasa.application, fr.liglab.adele.icasa.application.im
+ pl, fr.liglab.adele.icasa.application.impl.command, fr.liglab.adele.i
+ casa.application.remote, fr.liglab.adele.icasa.application.remote.uti
+ l, fr.liglab.adele.icasa.clockservice, fr.liglab.adele.icasa.clockser
+ vice.impl, fr.liglab.adele.icasa.clockservice.util, fr.liglab.adele.i
+ casa.command, fr.liglab.adele.icasa.command.handler, fr.liglab.adele.
+ icasa.commands, fr.liglab.adele.icasa.commands.impl, fr.liglab.adele.
+ icasa.common, fr.liglab.adele.icasa.common.impl, fr.liglab.adele.icas
+ a.common.xml.utils, fr.liglab.adele.icasa.dependency.manager.exceptio
+ n, fr.liglab.adele.icasa.device, fr.liglab.adele.icasa.device.bathroo
+ mscale, fr.liglab.adele.icasa.device.box, fr.liglab.adele.icasa.devic
+ e.button, fr.liglab.adele.icasa.device.button.simulated, fr.liglab.ad
+ ele.icasa.device.doorWindow, fr.liglab.adele.icasa.device.gasSensor, 
+ fr.liglab.adele.icasa.device.light, fr.liglab.adele.icasa.device.mana
+ ger, fr.liglab.adele.icasa.device.motion, fr.liglab.adele.icasa.devic
+ e.power, fr.liglab.adele.icasa.device.presence, fr.liglab.adele.icasa
+ .device.security, fr.liglab.adele.icasa.device.settopbox, fr.liglab.a
+ dele.icasa.device.sound, fr.liglab.adele.icasa.device.sprinkler, fr.l
+ iglab.adele.icasa.device.temperature, fr.liglab.adele.icasa.device.ut
+ il, fr.liglab.adele.icasa.exception, fr.liglab.adele.icasa.frontend.s
+ ervices, fr.liglab.adele.icasa.frontend.services.rest, fr.liglab.adel
+ e.icasa.frontend.services.utils, fr.liglab.adele.icasa.listener, fr.l
+ iglab.adele.icasa.location, fr.liglab.adele.icasa.location.impl, fr.l
+ iglab.adele.icasa.location.util, fr.liglab.adele.icasa.remote.wisdom,
+  fr.liglab.adele.icasa.remote.wisdom.util, fr.liglab.adele.icasa.serv
+ ice.location, fr.liglab.adele.icasa.service.preferences, fr.liglab.ad
+ ele.icasa.service.scheduler, fr.liglab.adele.icasa.service.zone.dimen
+ sion.calculator, fr.liglab.adele.icasa.service.zone.size.calculator, 
+ fr.liglab.adele.icasa.simulator, fr.liglab.adele.icasa.simulator.list
+ ener, fr.liglab.adele.icasa.simulator.listener.util, fr.liglab.adele.
+ icasa.simulator.remote.wisdom.util, fr.liglab.adele.icasa.simulator.s
+ cript.executor, fr.liglab.adele.icasa.simulator.services, org.apache.
+ felix.ipojo;version="[1.12.1,2.0.0)", org.apache.felix.ipojo.architec
+ ture;version="[1.12.1,2.0.0)", org.example.follow.me.manager, org.exa
+ mple.time, org.json, org.osgi.service.cm;version=1.2, org.osgi.servic
+ e.log;version=1.3
+iPOJO-Components: instance { $name="follow.me.command" $component="org
+ .example.follow.me.comand.FollowMeCommandImpl" }component { $name="or
+ g.example.follow.me.comand.FollowMeCommandImpl" $classname="org.examp
+ le.follow.me.comand.FollowMeCommandImpl" fr.liglab.adele.icasa.comman
+ d.handler:commandprovider { $namespace="followme" fr.liglab.adele.ica
+ sa.command.handler:command { $method="setIP" }fr.liglab.adele.icasa.c
+ ommand.handler:command { $method="getIP" }fr.liglab.adele.icasa.comma
+ nd.handler:command { $method="getMaximumNumberOfLightsToTurnOn" }fr.l
+ iglab.adele.icasa.command.handler:command { $method="setMaximumNumber
+ OfLightsToTurnOn" }fr.liglab.adele.icasa.command.handler:command { $m
+ ethod="getEG" }fr.liglab.adele.icasa.command.handler:command { $metho
+ d="setEG" }fr.liglab.adele.icasa.command.handler:command { $method="g
+ etmom" }fr.liglab.adele.icasa.command.handler:command { $method="setm
+ om" }}requires { $field="m_administrationService" }requires { $field=
+ "config" }requires { $field="moment" }manipulation { $classname="org.
+ example.follow.me.comand.FollowMeCommandImpl" field { $name="config" 
+ $type="com.example.bimary.follow.me.FollowMeConfiguration" }field { $
+ name="m_administrationService" $type="org.example.follow.me.manager.F
+ ollowMeAdministration" }field { $name="moment" $type="org.example.tim
+ e.MomentOfTheDayService" }method { $name="setIP" $arguments="{java.la
+ ng.String}" $names="{goal}" }method { $name="getIP" }method { $name="
+ getMaximumNumberOfLightsToTurnOn" }method { $name="setMaximumNumberOf
+ LightsToTurnOn" $arguments="{int}" $names="{ml}" }method { $name="get
+ EG" }method { $name="setEG" $arguments="{java.lang.String}" $names="{
+ goal}" }method { $name="getmom" }method { $name="setmom" }}}
+

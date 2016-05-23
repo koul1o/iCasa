@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.example.time.MomentOfTheDayImpl&apos; to &apos;MomentOfTheDayServiceImpl&apos;&#x0D;&#x0A;- Original project: &apos;momentOfTheDay&apos;&#x0D;&#x0A;- Original element: &apos;org.example.time.MomentOfTheDayImpl&apos;&#x0D;&#x0A;- Renamed element: &apos;org.example.time.MomentOfTheDayServiceImpl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MomentOfTheDayImpl&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.example.time{MomentOfTheDayImpl.java[MomentOfTheDayImpl" matchStrategy="1" name="MomentOfTheDayServiceImpl" qualified="false" references="true" similarDeclarations="false" stamp="1459518216561" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,15 @@
+package fr.liglab.adele.icasa.parent;
+
+public interface energySensorServicee {
+
+	public double calculateTottalEnergy();
+
+	public String setLocation(String location);
+
+	public String getLocation();
+
+	public String getMotD();
+
+	public void setMotD(String motD);
+
+}

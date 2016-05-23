@@ -1,0 +1,31 @@
+package org.example.follow.me.configuration;
+
+public class FollowMeConfigImpl implements FollowMeConfiguration {
+
+	/** Injected field for the component property maxLights */
+	private Integer maxLights;
+
+	@Override
+	public Integer getMaximumNumberOfLightsToTurnOn() {
+		System.out.println("max lights" + this.maxLights);
+		return this.maxLights;
+	}
+
+	@Override
+	public void setMaximumNumberOfLightsToTurnOn(int maxLights) {
+		this.maxLights = maxLights;
+
+	}
+
+	/** Component Lifecycle Method */
+	public void stop() {
+		System.out.println("FollowMe service stoped");
+	}
+
+	/** Component Lifecycle Method */
+	public void start() {
+		System.out.println("FollowMe service started");
+		// System.out.println("lights: " + maxLights);
+	}
+
+}

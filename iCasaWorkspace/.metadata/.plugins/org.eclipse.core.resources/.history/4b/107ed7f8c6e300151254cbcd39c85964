@@ -1,0 +1,25 @@
+package org.example.follow.me.manager;
+
+import org.example.follow.me.configuration.FollowMeConfiguration;
+
+//import org.example.follow.me.configuration.FollowMeConfiguration;
+
+public class FollowMeManagerImpl {
+
+	/** Field for followMeConfiguration dependency */
+	private FollowMeConfiguration followMeConfiguration;
+
+	/** Injected field for the component property ilumGoal */
+
+	/** Component Lifecycle Method */
+	public void stop() {
+		System.out.println("Manager stoped");
+	}
+
+	/** Component Lifecycle Method */
+	public void start() {
+		System.out.println("Manager started");
+
+	}
+
+}

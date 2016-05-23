@@ -1,0 +1,74 @@
+package ter.adele.energySensor;
+
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+import fr.liglab.adele.icasa.device.PowerObservable;
+import fr.liglab.adele.icasa.service.scheduler.PeriodicRunnable;
+
+public class energySensorServiceImpl implements energySensorService, PeriodicRunnable {
+
+	private String location;
+	/** Field for observables dependency */
+	private PowerObservable[] observables;
+
+	/** Bind Method for observables dependency */
+	public void bindObservables(PowerObservable powerObservable, Map properties) {
+		// TODO: Add your implementation code here
+	}
+
+	/** Unbind Method for observables dependency */
+	public void unbindObservables(PowerObservable powerObservable, Map properties) {
+		// TODO: Add your implementation code here
+	}
+
+	/** Component Lifecycle Method */
+	public void stop() {
+		System.out.println("Energy sensor stoped");
+	}
+
+	/** Component Lifecycle Method */
+	public void start() {
+		System.out.println("Energy sensor started");
+	}
+
+	@Override
+	public double calculateTottalEnergy() {
+		double tottalConsumption = 0;
+		for (PowerObservable powerObservable : observables) {
+
+			tottalConsumption = tottalConsumption + powerObservable.getCurrentConsumption();
+
+		}
+		System.out.println("Tottal consumption in"+getLocation()+": " + tottalConsumption);
+		return tottalConsumption;
+	}
+
+	@Override
+	public void run() {
+		calculateTottalEnergy();
+
+	}
+
+	@Override
+	public long getPeriod() {
+		return 5;
+	}
+
+	@Override
+	public TimeUnit getUnit() {
+		return TimeUnit.SECONDS;
+	}
+
+	@Override
+	public String setLocation(String location) {
+		return this.location = location;
+
+	}
+
+	@Override
+	public String getLocation() {
+		return location;
+	}
+
+}

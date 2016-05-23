@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="org.example.hello.client.HelloClientImpl" name="Hello Client">
+    <requires aggregate="true" specification="org.example.hello.service.Hello" field="helloServices">
+      <callback method="bindHello" type="bind"/>
+      <callback method="unbindHello" type="unbind"/>
+    </requires>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <properties>
+      <property field="m_name" name="name" type="java.lang.String" value="noname"/>
+      <property field="m_clang" name="clang" type="java.lang.String"/>
+    </properties>
+    <requires aggregate="true" filter="(lang=fr)" specification="org.example.hello.service.Hello" field="helloServicesFr">
+      <callback method="bindHello" type="bind"/>
+      <callback method="unbindHello" type="unbind"/>
+    </requires>
+    <requires aggregate="true" filter="(lang=en)" specification="org.example.hello.service.Hello" field="helloServicesEn">
+      <callback method="bindHello" type="bind"/>
+      <callback method="unbindHello" type="unbind"/>
+    </requires>
+  </component>
+  <instance component="Hello Client" name="International client">
+    <property name="name" value="Kyriakos"/>
+    <property name="clang" value="en"/>
+  </instance>
+  <instance component="Hello Client" name="French client">
+    <property name="name" value="Paul"/>
+    <property name="clang" value="fr"/>
+  </instance>
+</ipojo>

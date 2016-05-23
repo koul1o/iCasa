@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: iPOJO 1.12.1
+Import-Package: org.apache.felix.ipojo;version="[1.12.1,2.0.0)", org.a
+ pache.felix.ipojo.architecture;version="[1.12.1,2.0.0)", org.osgi.ser
+ vice.cm;version=1.2, org.osgi.service.log;version=1.3
+

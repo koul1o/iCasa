@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component name="FollowMeConfig">
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <properties>
+      <property field="maxLights" name="maxLights" type="java.lang.Integer" value="0"/>
+    </properties>
+  </component>
+</ipojo>

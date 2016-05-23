@@ -1,0 +1,113 @@
+package org.example.time;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import fr.liglab.adele.icasa.clockservice.Clock;
+import fr.liglab.adele.icasa.service.scheduler.PeriodicRunnable;
+
+public class MomentOfTheDayServiceImpl implements MomentOfTheDayService, PeriodicRunnable {
+
+	List<MomentOfTheDayListener> listListnener = new ArrayList<>();
+	/**
+	 * The current moment of the day :
+	 **/
+	MomentOfTheDay currentMomentOfTheDay;
+
+	@Override
+	public MomentOfTheDay getMomentOfTheDay() {
+		return this.currentMomentOfTheDay;
+	}
+
+	@Override
+	public void setMomentOfTheDay(MomentOfTheDay mom) {
+
+		this.currentMomentOfTheDay = mom;
+
+	}
+
+	// Implementation ot the PeriodicRunnable ...
+	MomentOfTheDay oldMom = null;
+	MomentOfTheDay momentOfTheDay = MomentOfTheDay.MORNING;
+	/** Field for clock dependency */
+	private Clock clock;
+
+	@Override
+	public void run() {
+
+		Date currentDate = new Date(clock.currentTimeMillis());
+
+		DateFormat df = new SimpleDateFormat("HH");
+		String hou = df.format(currentDate);
+		int hour = Integer.parseInt(hou);
+		System.out.println("current hour" + hour);
+
+		momentOfTheDay.getCorrespondingMoment(hour);
+		currentMomentOfTheDay = momentOfTheDay.getCorrespondingMoment(hour);
+
+		System.out.println("Moment of the day: " + currentMomentOfTheDay);
+		System.out.println("factor " + clock.getFactor());
+
+		
+		
+		if (currentMomentOfTheDay != oldMom) {
+			for (MomentOfTheDayListener listener : listListnener) {
+				listener.momentOfTheDayHasChanged(currentMomentOfTheDay);
+			}
+		}
+		oldMom = currentMomentOfTheDay;
+	}
+
+	@Override
+	public int getTime() {
+
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("H");
+
+		LocalDateTime dateTime = LocalDateTime.now();
+
+		String formattedDateTime = dateTime.format(formatter);
+		int time = Integer.valueOf(formattedDateTime);
+		return time;
+	}
+
+	@Override
+	public long getPeriod() {
+
+		return 3;
+	}
+
+	@Override
+	public TimeUnit getUnit() {
+		// TODO Auto-generated method stub
+		return TimeUnit.SECONDS;
+	}
+
+	/** Component Lifecycle Method */
+	public void stop() {
+
+	}
+
+	/** Component Lifecycle Method */
+	public void start() {
+
+	}
+
+	@Override
+	public synchronized void register(MomentOfTheDayListener listener) {
+		listListnener.add(listener);
+		System.out.println("Component registered");
+
+	}
+
+	@Override
+	public synchronized void unregister(MomentOfTheDayListener listener) {
+		listListnener.remove(listener);
+	}
+
+}

@@ -1,0 +1,64 @@
+<behavior startdate="25/12/2012-00:00:00" factor="1">
+ 
+    
+
+
+
+    <create-zone id="kitchen"  leftX="410" topY="370" X-Length="245" Y-Length="210" />  
+    <create-zone id="livingroom" leftX="410" topY="28" X-Length="245" Y-Length="350" />
+    <create-zone id="bedroom"  leftX="55" topY="370" X-Length="259" Y-Length="210" />
+    <create-zone id="bathroom"  leftX="55" topY="20" X-Length="260" Y-Length="350" />
+
+
+    <create-device id="ThermometerA3654Q-S" type="iCasa.Thermometer" />
+    <create-device id="Heat-A4894S-S" type="iCasa.Heater" />
+    <create-device id="Cool-A7496W-S" type="iCasa.Cooler" />
+    <create-device id="ThermometerB3654Q-S" type="iCasa.Thermometer" />
+    <create-device id="Heat-B4894S-S" type="iCasa.Heater" />
+    <create-device id="Cool-B7496W-S" type="iCasa.Cooler" />
+    <create-device id="ThermometerC3654Q-S" type="iCasa.Thermometer" />
+    <create-device id="Heat-C4894S-S" type="iCasa.Heater" />
+    <create-device id="Cool-C7496W-S" type="iCasa.Cooler" />
+    <create-device id="ThermometerD3654Q-S" type="iCasa.Thermometer" />
+    <create-device id="Heat-D4894S-S" type="iCasa.Heater" />
+    <create-device id="Cool-D7496W-S" type="iCasa.Cooler" />
+ 
+    <move-device-zone deviceId="Heat-A4894S-S" zoneId="kitchen" />
+    <move-device-zone deviceId="ThermometerA3654Q-S" zoneId="kitchen" />
+    <move-device-zone deviceId="Cool-A7496W-S" zoneId="kitchen" />
+
+
+    <move-device-zone deviceId="Heat-B4894S-S" zoneId="bedroom" />
+    <move-device-zone deviceId="ThermometerB3654Q-S" zoneId="bedroom" />
+    <move-device-zone deviceId="Cool-B7496W-S" zoneId="bedroom" />
+
+
+     
+    <move-device-zone deviceId="Heat-C4894S-S" zoneId="livingroom" />
+    <move-device-zone deviceId="ThermometerC3654Q-S" zoneId="livingroom" />
+    <move-device-zone deviceId="Cool-C7496W-S" zoneId="livingroom" />
+
+
+    
+    <move-device-zone deviceId="Heat-D4894S-S" zoneId="bathroom" />
+    <move-device-zone deviceId="ThermometerD3654Q-S" zoneId="bathroom" />
+    <move-device-zone deviceId="Cool-D7496W-S" zoneId="bathroom" />
+
+ 
+    
+   
+    <modify-zone-variable zoneId="kitchen" variable="Temperature" value="200.15"/>
+
+    
+    <modify-zone-variable zoneId="livingroom" variable="Temperature" value="250.15"/>
+    
+  
+    <modify-zone-variable zoneId="bedroom" variable="Temperature" value="260.15"/>
+
+    
+    <modify-zone-variable zoneId="bathroom" variable="Temperature" value="240.15"/>
+    <modify-zone-variable zoneId="livingroom" variable="Illuminance" value="0"/>
+     
+ <create-person id="Paul" type="Grandfather" />
+
+</behavior>

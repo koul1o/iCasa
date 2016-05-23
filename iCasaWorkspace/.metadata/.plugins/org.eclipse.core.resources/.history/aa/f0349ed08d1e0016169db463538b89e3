@@ -1,0 +1,30 @@
+package fr.liglab.adele.icasa.parent;
+
+public class energySensorServiceImpl implements energySensorService {
+
+	public double calculateTottalEnergy() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public String setLocation(String location) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getLocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getMotD() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setMotD(String motD) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipojo xmlns="org.apache.felix.ipojo">
+  <component classname="org.example.hello.service.impl.HelloProviderImpl" name="HelloProvider">
+    <provides specifications="org.example.hello.service.Hello">
+      <property name="lang" type="java.lang.String" value="en"/>
+    </provides>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <properties/>
+  </component>
+  <instance component="HelloProvider" name="EnglishProvider">
+    <property name="lang" value="en"/>
+  </instance>
+  <component classname="org.example.hello.client.HelloClientImpl" name="HelloClient">
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <properties>
+      <property field="m_name" name="name" type="java.lang.String" value="noname"/>
+      <property field="m_clang" name="clang" type="java.lang.String" value="en"/>
+    </properties>
+    <requires aggregate="true" filter="(lang=en)" specification="org.example.hello.service.Hello" field="helloServices">
+      <callback method="bindHello" type="bind"/>
+      <callback method="unbindHello" type="unbind"/>
+    </requires>
+    <requires aggregate="true" filter="(lang=fr)" specification="org.example.hello.service.Hello" field="second">
+      <callback method="bindHello" type="bind"/>
+      <callback method="unbindHello" type="unbind"/>
+    </requires>
+    <requires aggregate="true" filter="(lang=gr)" specification="org.example.hello.service.Hello" field="thind">
+      <callback method="bindHello" type="bind"/>
+      <callback method="unbidHello" type="unbind"/>
+    </requires>
+  </component>
+  <component classname="org.example.hello.service.impl.HelloFrenchProviderImpl" name="HelloFrenchProvider">
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+    <provides specifications="org.example.hello.service.Hello">
+      <property field="lang" name="lang" type="java.lang.String" value="fr"/>
+    </provides>
+    <properties/>
+  </component>
+  <component classname="org.example.hello.service.impl.HelloGreekProviderImpl" name="HelloGreekProvider">
+    <provides specifications="org.example.hello.service.Hello">
+      <property name="lang" type="java.lang.String" value="gr"/>
+    </provides>
+    <callback method="start" transition="validate"/>
+    <callback method="stop" transition="invalidate"/>
+  </component>
+  <instance component="HelloFrenchProvider" name="HelloFrenchProvider">
+    <property name="lang" value="fr"/>
+  </instance>
+  <instance component="HelloGreekProvider" name="HelloGreekProvider">
+    <property name="lang" value="gr"/>
+  </instance>
+  <instance component="HelloClient" name="Int">
+    <property name="name" value="inter"/>
+    <property name="clang" value="en"/>
+  </instance>
+  <instance component="HelloClient" name="Greek">
+    <property name="name" value="ellina"/>
+    <property name="clang" value="el"/>
+  </instance>
+  <instance component="HelloClient" name="French">
+    <property name="name" value="francais"/>
+    <property name="clang" value="fr"/>
+  </instance>
+</ipojo>
