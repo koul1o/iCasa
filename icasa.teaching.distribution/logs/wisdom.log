@@ -7258,3 +7258,517 @@ org.osgi.framework.BundleException: Unresolved constraint in bundle energySensor
 13:51:18.877 14016 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.c.handler.CommandHandler - start the shell handler
 13:51:18.981 14120 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.s.s.i.SchedulerTechnicalService -  Scheduled Runnable 1052
 13:51:19.073 14212 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.c.handler.CommandHandler - start the shell handler
+14:11:50.102 1245241 [monitor-applications] INFO  o.o.c.c.activators.DirectoryMonitor - File C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent1-0.0.3-SNAPSHOT.jar deleted from C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications
+14:11:50.114 1245253 [monitor-applications] DEBUG o.o.c.c.activators.DirectoryMonitor - Deployer handling deletion of parent1-0.0.3-SNAPSHOT.jar : [org.ow2.chameleon.core.activators.BundleDeployer@4550bb58, org.wisdom.resources.WebJarDeployer@1711332f]
+14:11:50.121 1245260 [monitor-applications] INFO  o.o.c.c.activators.BundleDeployer - Uninstalling bundle parent1
+14:11:50.206 1245345 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Refreshing bundles to cleanup stale references
+14:11:50.211 1245350 [monitor-applications] INFO  o.o.c.c.activators.DirectoryMonitor - File C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent2-0.0.3-SNAPSHOT.jar deleted from C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications
+14:11:50.236 1245375 [monitor-applications] DEBUG o.o.c.c.activators.DirectoryMonitor - Deployer handling deletion of parent2-0.0.3-SNAPSHOT.jar : [org.ow2.chameleon.core.activators.BundleDeployer@4550bb58, org.wisdom.resources.WebJarDeployer@1711332f]
+14:11:50.245 1245384 [monitor-applications] INFO  o.o.c.c.activators.BundleDeployer - Uninstalling bundle parent2
+14:11:52.742 1247881 [FelixFrameworkWiring] WARN  o.o.c.core.utils.FrameworkManager - Shelbie system Service leaving - shutting down sequence detected
+14:11:52.742 1247881 [FelixFrameworkWiring] INFO  org.ow2.chameleon - Stopping Chameleon
+14:11:52.758 1247897 [FelixFrameworkWiring] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING]  : [org.wisdom.template.thymeleaf.tracker.TemplateDeployer-0] The dependency is not optional, however no service object can be injected in watcher -> org.ow2.chameleon.core.services.Watcher
+14:11:52.789 1247928 [FelixFrameworkWiring] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING]  : [fr.liglab.adele.icasa.simulator.script.executor.impl.ScriptMonitor-0] The dependency is not optional, however no service object can be injected in watcher -> org.ow2.chameleon.core.services.Watcher
+14:11:52.805 1247944 [FelixFrameworkWiring] DEBUG o.o.c.c.activators.DirectoryMonitor - Stopping file monitoring of C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications
+14:11:54.812 1249951 [FelixFrameworkWiring] DEBUG o.o.c.c.activators.DirectoryMonitor - File monitoring stopped
+14:11:54.812 1249951 [FelixFrameworkWiring] DEBUG o.o.c.c.activators.DirectoryMonitor - Stopping file monitoring of C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf
+14:11:56.712 1251851 [FelixFrameworkWiring] DEBUG o.o.c.c.activators.DirectoryMonitor - File monitoring stopped
+14:11:56.712 1251851 [FelixFrameworkWiring] DEBUG o.o.c.c.activators.DirectoryMonitor - Stopping file monitoring of C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts
+14:11:57.399 1252538 [FelixFrameworkWiring] DEBUG o.o.c.c.activators.DirectoryMonitor - File monitoring stopped
+14:11:57.399 1252538 [FelixFrameworkWiring] DEBUG o.o.c.c.activators.DirectoryMonitor - Stopping file monitoring of C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates
+14:11:59.233 1254372 [FelixFrameworkWiring] DEBUG o.o.c.c.activators.DirectoryMonitor - File monitoring stopped
+14:12:00.263 1255402 [FelixFrameworkWiring] INFO  org.ow2.chameleon - Chameleon stopped
+14:12:00.619 1255758 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.terminal.WisitShellController@64073ed4
+14:12:00.926 1256065 [FelixFrameworkWiring] INFO  f.l.a.i.c.handler.CommandHandler - stop the shell handler
+14:12:00.986 1256125 [FelixFrameworkWiring] INFO  f.l.a.i.c.handler.CommandHandler - stop the shell handler
+14:12:01.481 1256620 [FelixFrameworkWiring] INFO  f.l.a.i.c.handler.CommandHandler - stop the shell handler
+14:12:02.116 1257255 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.MonitorCenter@787a7095
+14:12:02.116 1257255 [FelixFrameworkWiring] INFO  o.w.c.jackson.JacksonSingleton - Removing Jackson module org.wisdom.monitor.service.MonitorExtension
+14:12:02.149 1257288 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.dashboard.DashboardExtension@3ae93f5c
+14:12:02.180 1257319 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.executors.ExecutorExtension@541f0985
+14:12:02.227 1257366 [FelixFrameworkWiring] INFO  o.w.c.jackson.JacksonSingleton - Removing Jackson module ManagedExecutorService Module
+14:12:02.250 1257389 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.ipojo.IPOJOController@2f35c4b1
+14:12:02.281 1257420 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.logger.LoggerExtension@643ee349
+14:12:02.297 1257436 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.osgi.BundleMonitorExtension@53a4ef03
+14:12:02.349 1257488 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.osgi.ServiceMonitorExtension@5a97b1fc
+14:12:02.412 1257551 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.wisdom.ControllerExtension@47ba56bd
+14:12:02.442 1257581 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.wisdom.RouterExtension@538e3c34
+14:12:02.572 1257711 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/bundles.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.596 1257735 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/controllers.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.612 1257751 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/dashboard.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.627 1257766 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/executors.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.649 1257788 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/ipojo.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.665 1257804 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/layout.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.681 1257820 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/loggers.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.697 1257836 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/login.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.712 1257851 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/routes.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.752 1257891 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/services.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.768 1257907 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/terminal.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.776 1257915 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/tiles.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:02.816 1257955 [FelixFrameworkWiring] INFO  f.l.a.i.c.handler.CommandHandler - stop the shell handler
+14:12:03.260 1258399 [FelixFrameworkWiring] INFO  f.l.a.i.c.handler.CommandHandler - stop the shell handler
+14:12:03.829 1258968 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/bundles.thl.html
+14:12:03.849 1258988 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/controllers.thl.html
+14:12:03.863 1259002 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/dashboard.thl.html
+14:12:03.870 1259009 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/executors.thl.html
+14:12:03.911 1259050 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/ipojo.thl.html
+14:12:03.927 1259066 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/layout.thl.html
+14:12:03.938 1259077 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/loggers.thl.html
+14:12:03.953 1259092 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/login.thl.html
+14:12:03.968 1259107 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/routes.thl.html
+14:12:03.983 1259122 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/services.thl.html
+14:12:04.000 1259139 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/terminal.thl.html
+14:12:04.000 1259139 [FelixFrameworkWiring] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/tiles.thl.html
+14:12:04.052 1259191 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Refreshing bundles to cleanup stale references
+14:12:04.067 1259206 [FelixStartLevel] INFO  f.l.a.i.s.s.i.SchedulerTechnicalService -  UnScheduled Runnable 1052
+14:12:04.233 1259372 [FelixStartLevel] INFO  f.l.a.i.s.z.d.c.i.ZoneDimensionImpl - The dimension service is stopping
+14:12:04.242 1259381 [FelixStartLevel] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING]  : [fr.liglab.adele.icasa.service.zone.dimension.calculator.impl.ZoneDimensionImpl-0] The dependency is not optional, however no service object can be injected in m_preferences -> fr.liglab.adele.icasa.service.preferences.Preferences
+14:12:04.279 1259418 [FelixStartLevel] INFO  f.l.a.i.s.s.i.SchedulerTechnicalService -  UnScheduled Runnable 1041
+14:12:04.288 1259427 [FelixStartLevel] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING]  : [iCasaPreferences-0] The dependency is not optional, however no service object can be injected in preferenceService -> org.ow2.chameleon.sharedprefs.SharedPreferencesService
+14:12:04.368 1259507 [FelixStartLevel] INFO  org.wisdom.router.RequestRouter - Removing routes from fr.liglab.adele.icasa.remote.wisdom.impl.EventBroadcast@f015fa9
+14:12:04.386 1259525 [FelixStartLevel] INFO  o.w.f.vertx.WisdomVertxServer - Stopping the vert.x server
+14:12:04.397 1259536 [vert.x-eventloop-thread-0] INFO  o.w.f.vertx.WisdomVertxServer - The HTTP server has been stopped
+14:12:05.004 1260143 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.MonitorCenter : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.008 1260147 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.dashboard.DashboardExtension : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.013 1260152 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.executors.ExecutorExtension : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.038 1260177 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.executors.ManagedExecutorModule : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.053 1260192 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.ipojo.IPOJOController : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.053 1260192 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.logger.LoggerExtension : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.075 1260214 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.osgi.BundleMonitorExtension : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.111 1260250 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.osgi.ServiceMonitorExtension : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.123 1260262 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.security.MonitorAuthenticator : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.123 1260262 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.terminal.WisitShellController : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.123 1260262 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.wisdom.ControllerExtension : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:05.170 1260309 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.wisdom.RouterExtension : Cannot register the Factory service with the bundle context of the bundle 101 - the bundle is in the state 16
+14:12:06.154 1261293 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.170 1261309 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.185 1261324 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.201 1261340 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.executors.ManagedExecutorModule : The bundle 101 does not have the permission to register the services [com.fasterxml.jackson.databind.Module]
+14:12:06.223 1261362 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.246 1261385 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.ipojo.IPOJOController : The bundle 101 does not have the permission to register the services [org.wisdom.api.Controller, org.wisdom.api.http.Status, org.wisdom.api.http.HeaderNames, org.wisdom.monitor.service.MonitorExtension]
+14:12:06.277 1261416 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.277 1261416 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.logger.LoggerExtension : The bundle 101 does not have the permission to register the services [org.wisdom.api.Controller, org.wisdom.api.http.Status, org.wisdom.api.http.HeaderNames, org.wisdom.monitor.service.MonitorExtension]
+14:12:06.323 1261462 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.339 1261478 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.osgi.BundleMonitorExtension : The bundle 101 does not have the permission to register the services [org.wisdom.api.Controller, org.wisdom.api.http.Status, org.wisdom.api.http.HeaderNames, org.wisdom.monitor.service.MonitorExtension]
+14:12:06.354 1261493 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.370 1261509 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.osgi.ServiceMonitorExtension : The bundle 101 does not have the permission to register the services [org.wisdom.api.Controller, org.wisdom.api.http.Status, org.wisdom.api.http.HeaderNames, org.wisdom.monitor.service.MonitorExtension]
+14:12:06.419 1261558 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.420 1261559 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/bundles.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.424 1261563 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.security.MonitorAuthenticator : The bundle 101 does not have the permission to register the services [org.wisdom.api.security.Authenticator]
+14:12:06.430 1261569 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.432 1261571 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/controllers.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.487 1261626 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.491 1261630 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/dashboard.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.506 1261645 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/executors.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.517 1261656 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/ipojo.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.529 1261668 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR]  : Cannot register the architecture service, bundle 101 is not in a valid state
+14:12:06.552 1261691 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/layout.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.569 1261708 [[iPOJO] pool-1-thread-1] ERROR o.o.u.log.impl.osgi.LoggerService - [ERROR] org.wisdom.monitor.extensions.wisdom.RouterExtension : The bundle 101 does not have the permission to register the services [org.wisdom.api.Controller, org.wisdom.api.http.Status, org.wisdom.api.http.HeaderNames, org.wisdom.monitor.service.MonitorExtension]
+14:12:06.571 1261710 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/loggers.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.635 1261774 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/login.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.658 1261797 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/routes.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.686 1261825 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/services.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.703 1261842 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/terminal.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:06.708 1261847 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/tiles.thl.html from org.wisdom.framework.wisdom.monitor
+14:12:08.126 1263265 [FelixStartLevel] INFO  org.wisdom.router.RequestRouter - Removing routes from fr.liglab.adele.dashboard.servlet.SimulatorMainPage@16a3644
+14:12:08.157 1263296 [FelixStartLevel] INFO  org.wisdom.router.RequestRouter - Removing routes from fr.liglab.adele.dashboard.servlet.SimulatorMap@78b2ce9a
+14:12:08.204 1263343 [FelixStartLevel] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://82.0:0/templates/assets/list.thl.html from org.wisdom-framework.resource-controller
+14:12:08.221 1263360 [FelixStartLevel] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING]  : [org.wisdom.template.thymeleaf.tracker.TemplateTracker-0] The dependency is not optional, however no service object can be injected in engine -> org.wisdom.template.thymeleaf.ThymeleafTemplateCollector
+14:12:08.264 1263403 [FelixStartLevel] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.resources.AssetsSingleton@7bfd28c8
+14:12:08.589 1263728 [FelixStartLevel] INFO  org.wisdom.router.RequestRouter - Removing routes from fr.liglab.adele.icasa.simulator.remote.wisdom.impl.PersonREST@45ecc1f4
+14:12:08.651 1263790 [FelixStartLevel] INFO  org.wisdom.router.RequestRouter - Removing routes from fr.liglab.adele.icasa.simulator.remote.wisdom.impl.RemoteShell@68e88cdf
+14:12:08.680 1263819 [FelixStartLevel] INFO  org.wisdom.router.RequestRouter - Removing routes from fr.liglab.adele.icasa.simulator.remote.wisdom.impl.ScriptPlayerREST@77dd7567
+14:12:08.731 1263870 [FelixStartLevel] INFO  org.wisdom.router.RequestRouter - Removing routes from fr.liglab.adele.icasa.simulator.remote.wisdom.impl.SimulationREST@27a4dd4f
+14:12:09.486 1264625 [FelixStartLevel] INFO  o.o.u.log.impl.osgi.LoggerService - The RoseMachine server1 has been stoped
+14:12:09.506 1264645 [FelixStartLevel] INFO  o.o.u.log.impl.osgi.LoggerService - RoSe.configurator is stopping
+14:12:09.914 1265053 [FelixStartLevel] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING]  : [ICasaTrackingInterceptor-0] The dependency is not optional, however no service object can be injected in contextManager -> fr.liglab.adele.icasa.ContextManager
+14:12:10.068 1265207 [FelixStartLevel] INFO  f.l.a.i.c.handler.CommandHandler - stop the shell handler
+14:12:12.001 1267140 [Shelbie Console Thread] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING]  : [org.ow2.shelbie.core.console.startup.ConsoleStartupComponent-0] The dependency is not optional, however no service object can be injected in system -> org.ow2.shelbie.core.system.SystemService
+14:12:12.025 1267164 [FelixStartLevel] WARN  o.o.c.core.utils.FrameworkManager - Shelbie system Service leaving - shutting down sequence detected
+14:12:12.041 1267180 [FelixStartLevel] INFO  org.ow2.chameleon - Stopping Chameleon
+14:12:13.049 1268188 [FelixStartLevel] INFO  org.ow2.chameleon - Chameleon stopped
+14:12:13.195 1268334 [Thread-0] INFO  org.ow2.chameleon - Stopping Chameleon
+14:12:13.242 1268381 [Thread-0] INFO  org.ow2.chameleon - Chameleon stopped
+14:12:15.845 300  [main] DEBUG org.ow2.chameleon - interactive mode enabled
+14:12:15.877 332  [main] DEBUG o.o.c.c.activators.DirectoryMonitor - Creating file alteration monitor for C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications with a polling period of 2000
+14:12:16.647 1102 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\autoconf-resource-processor-1.0.4.jar
+14:12:16.661 1116 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\autoload.res.processor-1.2.7-SNAPSHOT.jar
+14:12:16.677 1132 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\deployment-admin-impl-1.0.4.jar
+14:12:16.708 1163 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\org.apache.felix.configadmin-1.8.4.jar
+14:12:16.712 1167 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\org.apache.felix.gogo.command-0.14.0.jar
+14:12:16.728 1183 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\org.apache.felix.gogo.runtime-0.16.2.jar
+14:12:16.777 1232 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\org.apache.felix.ipojo-1.12.1.jar
+14:12:16.795 1250 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\org.apache.felix.ipojo.gogo-1.12.1.jar
+14:12:16.820 1275 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\org.apache.felix.ipojo.handler.whiteboard-1.6.0.jar
+14:12:16.850 1305 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\ow2-util-i18n-1.0.36.jar
+14:12:16.863 1318 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\ow2-util-log-1.0.36.jar
+14:12:16.870 1325 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\shelbie-api-2.0.0-RC1.jar
+14:12:16.915 1370 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\shelbie-builtin-commands-2.0.0-RC1.jar
+14:12:16.931 1386 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\shelbie-core-2.0.0-RC1.jar
+14:12:16.957 1412 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\shelbie-ipojo-commands-2.1.jar
+14:12:16.979 1434 [main] DEBUG o.o.c.core.activators.CoreActivator - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\core\shelbie-startup-console-2.0.0-RC1.jar
+14:12:16.993 1448 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle de.akquinet.gomobile.deployment.rp.autoconf
+14:12:17.024 1479 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle autoload.res.processor
+14:12:17.036 1491 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle de.akquinet.gomobile.deploymentadmin
+14:12:17.051 1506 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.apache.felix.configadmin
+14:12:17.100 1555 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.apache.felix.gogo.command
+14:12:17.116 1571 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.apache.felix.gogo.runtime
+14:12:17.147 1602 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.apache.felix.ipojo
+14:12:17.178 1633 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.apache.felix.ipojo.gogo
+14:12:17.196 1651 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.apache.felix.ipojo.handler.whiteboard
+14:12:17.234 1689 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.ow2.bundles.ow2-util-i18n
+14:12:17.244 1699 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.ow2.bundles.ow2-util-log
+14:12:17.255 1710 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.ow2.shelbie.api
+14:12:17.280 1735 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.ow2.shelbie.commands.shelbie-builtin-commands
+14:12:17.311 1766 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.ow2.shelbie.core
+14:12:17.322 1777 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.ow2.shelbie.commands.shelbie-ipojo-commands
+14:12:17.328 1783 [main] DEBUG o.o.c.core.activators.CoreActivator - Starting bundle org.ow2.shelbie.startup-console
+14:12:17.335 1790 [main] INFO  o.o.c.c.activators.DirectoryMonitor - Starting watcher service configured for [C:\Users\koul1o\iCasa\icasa.teaching.distribution\runtime, C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications]
+14:12:17.382 1837 [main] DEBUG o.o.c.c.activators.DirectoryMonitor - No file monitoring for runtime
+14:12:17.383 1838 [main] INFO  o.o.c.c.activators.DirectoryMonitor - Starting file monitoring for applications
+14:12:17.526 1981 [main] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.BundleDeployer@c8c12ac for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\runtime.
+14:12:20.994 5449 [main] ERROR o.o.c.c.activators.BundleDeployer - Error during the starting of energySensor
+org.osgi.framework.BundleException: Unresolved constraint in bundle energySensor [54]: Unable to resolve 54.0: missing requirement [54.0] osgi.wiring.package; (osgi.wiring.package=com.ibm.iotf.client.app)
+	at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:4097) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2114) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:977) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:964) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.open(BundleDeployer.java:213) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:238) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:52) [chameleon-core-1.10.8.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:870) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.invokeServiceListenerCallback(EventDispatcher.java:987) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(EventDispatcher.java:838) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireServiceEvent(EventDispatcher.java:545) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.fireServiceEvent(Felix.java:4547) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.registerService(Felix.java:3521) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:348) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:355) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.start(BundleDeployer.java:86) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.utils.FrameworkManager.start(FrameworkManager.java:117) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Chameleon.start(Chameleon.java:258) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Main.main(Main.java:71) [chameleon-core-1.10.8.jar:na]
+14:12:21.733 6188 [main] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.BundleDeployer@c8c12ac for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications.
+14:12:21.989 6444 [main] ERROR o.o.c.c.activators.BundleDeployer - Error during the starting of BinaryLightFollowMe
+org.osgi.framework.BundleException: Unresolved constraint in bundle BinaryLightFollowMe [105]: Unable to resolve 105.0: missing requirement [105.0] osgi.wiring.package; (osgi.wiring.package=ter.adele.energySensor) [caused by: Unable to resolve 54.0: missing requirement [54.0] osgi.wiring.package; (osgi.wiring.package=com.ibm.iotf.client.app)]
+	at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:4097) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2114) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:977) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:964) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.open(BundleDeployer.java:213) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:238) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:52) [chameleon-core-1.10.8.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:870) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.invokeServiceListenerCallback(EventDispatcher.java:987) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(EventDispatcher.java:838) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireServiceEvent(EventDispatcher.java:545) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.fireServiceEvent(Felix.java:4547) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.registerService(Felix.java:3521) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:348) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:355) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.start(BundleDeployer.java:86) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.utils.FrameworkManager.start(FrameworkManager.java:117) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Chameleon.start(Chameleon.java:258) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Main.main(Main.java:71) [chameleon-core-1.10.8.jar:na]
+14:12:22.393 6848 [main] ERROR o.o.c.c.activators.BundleDeployer - Error during the starting of energySensor.command
+org.osgi.framework.BundleException: Unresolved constraint in bundle energySensor.command [106]: Unable to resolve 106.0: missing requirement [106.0] osgi.wiring.package; (&(osgi.wiring.package=ter.adele.energySensor)(version>=0.0.3.SNAPSHOT)) [caused by: Unable to resolve 54.0: missing requirement [54.0] osgi.wiring.package; (osgi.wiring.package=com.ibm.iotf.client.app)]
+	at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:4097) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2114) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:977) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:964) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.open(BundleDeployer.java:213) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:238) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:52) [chameleon-core-1.10.8.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:870) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.invokeServiceListenerCallback(EventDispatcher.java:987) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(EventDispatcher.java:838) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireServiceEvent(EventDispatcher.java:545) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.fireServiceEvent(Felix.java:4547) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.registerService(Felix.java:3521) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:348) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:355) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.start(BundleDeployer.java:86) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.utils.FrameworkManager.start(FrameworkManager.java:117) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Chameleon.start(Chameleon.java:258) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Main.main(Main.java:71) [chameleon-core-1.10.8.jar:na]
+14:12:22.776 7231 [main] ERROR o.o.c.c.activators.BundleDeployer - Error during the starting of follow.me.comand
+org.osgi.framework.BundleException: Unresolved constraint in bundle follow.me.comand [107]: Unable to resolve 107.0: missing requirement [107.0] osgi.wiring.package; (osgi.wiring.package=com.example.bimary.follow.me) [caused by: Unable to resolve 105.0: missing requirement [105.0] osgi.wiring.package; (osgi.wiring.package=ter.adele.energySensor) [caused by: Unable to resolve 54.0: missing requirement [54.0] osgi.wiring.package; (osgi.wiring.package=com.ibm.iotf.client.app)]]
+	at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:4097) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2114) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:977) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:964) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.open(BundleDeployer.java:213) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:238) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:52) [chameleon-core-1.10.8.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:870) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.invokeServiceListenerCallback(EventDispatcher.java:987) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(EventDispatcher.java:838) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireServiceEvent(EventDispatcher.java:545) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.fireServiceEvent(Felix.java:4547) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.registerService(Felix.java:3521) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:348) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:355) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.start(BundleDeployer.java:86) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.utils.FrameworkManager.start(FrameworkManager.java:117) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Chameleon.start(Chameleon.java:258) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Main.main(Main.java:71) [chameleon-core-1.10.8.jar:na]
+14:12:23.144 7599 [main] ERROR o.o.c.c.activators.BundleDeployer - Error during the starting of follow.me.manager
+org.osgi.framework.BundleException: Unresolved constraint in bundle follow.me.manager [108]: Unable to resolve 108.0: missing requirement [108.0] osgi.wiring.package; (osgi.wiring.package=com.example.bimary.follow.me) [caused by: Unable to resolve 105.0: missing requirement [105.0] osgi.wiring.package; (osgi.wiring.package=ter.adele.energySensor) [caused by: Unable to resolve 54.0: missing requirement [54.0] osgi.wiring.package; (osgi.wiring.package=com.ibm.iotf.client.app)]]
+	at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:4097) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2114) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:977) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:964) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.open(BundleDeployer.java:213) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:238) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor.addingService(DirectoryMonitor.java:52) [chameleon-core-1.10.8.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:870) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:901) [org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.invokeServiceListenerCallback(EventDispatcher.java:987) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(EventDispatcher.java:838) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.util.EventDispatcher.fireServiceEvent(EventDispatcher.java:545) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.fireServiceEvent(Felix.java:4547) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.Felix.registerService(Felix.java:3521) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:348) [chameleon-core-1.10.8.jar:na]
+	at org.apache.felix.framework.BundleContextImpl.registerService(BundleContextImpl.java:355) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.start(BundleDeployer.java:86) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.utils.FrameworkManager.start(FrameworkManager.java:117) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Chameleon.start(Chameleon.java:258) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.Main.main(Main.java:71) [chameleon-core-1.10.8.jar:na]
+14:12:23.556 8011 [main] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.ConfigDeployer@7b139eab for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\runtime.
+14:12:23.565 8020 [main] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.ConfigDeployer@7b139eab for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications.
+14:12:23.629 8084 [[iPOJO] pool-1-thread-1] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING] IPOJO-Main-Extender : 1 instances found in class org.wisdom.resources.AssetControllerConfiguration
+14:12:25.029 9484 [[iPOJO] pool-1-thread-1] INFO  o.w.c.ApplicationConfigurationImpl - Enabling the watching of the configuration file
+14:12:25.032 9487 [[iPOJO] pool-1-thread-1] DEBUG o.o.c.c.activators.DirectoryMonitor - Creating file alteration monitor for C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf with a polling period of 2000
+14:12:25.040 9495 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.BundleDeployer@c8c12ac for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf.
+14:12:25.051 9506 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.ConfigDeployer@7b139eab for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf.
+14:12:25.090 9545 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.configuration.ApplicationConfigurationImpl$ConfigurationDeployer@7bbe2549 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\runtime.
+14:12:25.093 9548 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.configuration.ApplicationConfigurationImpl$ConfigurationDeployer@7bbe2549 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications.
+14:12:25.101 9556 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.configuration.ApplicationConfigurationImpl$ConfigurationDeployer@7bbe2549 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf.
+14:12:25.127 9582 [[iPOJO] pool-1-thread-1] INFO  o.w.c.ApplicationConfigurationImpl - Configuration file : C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf\application.conf
+14:12:25.127 9582 [[iPOJO] pool-1-thread-1] INFO  o.w.c.ApplicationConfigurationImpl - Base directory : C:\Users\koul1o\iCasa\icasa.teaching.distribution
+14:12:25.127 9582 [[iPOJO] pool-1-thread-1] INFO  o.w.c.ApplicationConfigurationImpl - Wisdom running in DEV
+14:12:25.273 9728 [[iPOJO] pool-1-thread-1] INFO  o.w.c.jackson.JacksonSingleton - Starting JSON and XML support services
+14:12:26.255 10710 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.resources.WebJarDeployer@7a7739f5 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\runtime.
+14:12:26.282 10737 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - Web Library found in bootstrap-3.3.1.jar : bootstrap-3.3.1
+14:12:26.455 10910 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - bootstrap unpacked to C:\Users\koul1o\iCasa\icasa.teaching.distribution\chameleon-cache\bundle82\data\webjars\bootstrap-3.3.1\bootstrap\3.3.1
+14:12:26.478 10933 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - Web Library found in handlebars-2.0.0-1.jar : handlebars-2.0.0-1
+14:12:26.518 10973 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - handlebars unpacked to C:\Users\koul1o\iCasa\icasa.teaching.distribution\chameleon-cache\bundle82\data\webjars\handlebars-2.0.0-1\handlebars\2.0.0-1
+14:12:26.527 10982 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - Web Library found in jquery-2.1.1.jar : jquery-2.1.1
+14:12:26.542 10997 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - jquery unpacked to C:\Users\koul1o\iCasa\icasa.teaching.distribution\chameleon-cache\bundle82\data\webjars\jquery-2.1.1\jquery\2.1.1
+14:12:26.542 10997 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - Web Library found in jquery-mousewheel-3.1.11.jar : jquery-mousewheel-3.1.11
+14:12:26.565 11020 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - jquery-mousewheel unpacked to C:\Users\koul1o\iCasa\icasa.teaching.distribution\chameleon-cache\bundle82\data\webjars\jquery-mousewheel-3.1.11\jquery-mousewheel\3.1.11
+14:12:26.579 11034 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - Web Library found in momentjs-2.8.3.jar : momentjs-2.8.3
+14:12:26.604 11059 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - momentjs unpacked to C:\Users\koul1o\iCasa\icasa.teaching.distribution\chameleon-cache\bundle82\data\webjars\momentjs-2.8.3\momentjs\2.8.3
+14:12:26.619 11074 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - Web Library found in tablesorter-2.17.8.jar : tablesorter-2.17.8
+14:12:26.749 11204 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.resources.WebJarDeployer - tablesorter unpacked to C:\Users\koul1o\iCasa\icasa.teaching.distribution\chameleon-cache\bundle82\data\webjars\tablesorter-2.17.8\tablesorter\2.17.8
+14:12:26.759 11214 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.resources.WebJarDeployer@7a7739f5 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications.
+14:12:26.765 11220 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.resources.WebJarDeployer@7a7739f5 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf.
+14:12:26.828 11283 [[iPOJO] pool-1-thread-1] INFO  o.o.u.log.impl.osgi.LoggerService - RoSe.configurator is starting
+14:12:26.842 11297 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.rose.configurator.Configurator@456d9d5c for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\runtime.
+14:12:26.852 11307 [[iPOJO] pool-1-thread-1] INFO  o.o.u.log.impl.osgi.LoggerService - Start to load configuration file: rose-conf-simulator_REST_0.json
+14:12:26.932 11387 [[iPOJO] pool-1-thread-1] INFO  o.o.u.log.impl.osgi.LoggerService - The RoseMachine server1 has successfully started
+14:12:26.937 11392 [[iPOJO] pool-1-thread-1] INFO  o.o.u.log.impl.osgi.LoggerService - Machine: server1 OutConnection is open: 0 services are exported.
+14:12:26.943 11398 [[iPOJO] pool-1-thread-1] INFO  o.o.u.log.impl.osgi.LoggerService - Configuration rose-conf-simulator_REST_0.json successfully handled
+14:12:26.945 11400 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.rose.configurator.Configurator@456d9d5c for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications.
+14:12:26.952 11407 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.rose.configurator.Configurator@456d9d5c for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf.
+14:12:27.422 11877 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer fr.liglab.adele.icasa.simulator.script.executor.impl.ScriptExecutorImpl@3d7bf6ba for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\runtime.
+14:12:27.422 11877 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer fr.liglab.adele.icasa.simulator.script.executor.impl.ScriptExecutorImpl@3d7bf6ba for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications.
+14:12:27.422 11877 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer fr.liglab.adele.icasa.simulator.script.executor.impl.ScriptExecutorImpl@3d7bf6ba for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf.
+14:12:27.468 11923 [[iPOJO] pool-1-thread-1] DEBUG o.o.c.c.activators.DirectoryMonitor - Creating file alteration monitor for C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts with a polling period of 2000
+14:12:27.484 11939 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.BundleDeployer@c8c12ac for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts.
+14:12:27.484 11939 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.ConfigDeployer@7b139eab for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts.
+14:12:27.484 11939 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.configuration.ApplicationConfigurationImpl$ConfigurationDeployer@7bbe2549 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts.
+14:12:27.484 11939 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.resources.WebJarDeployer@7a7739f5 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts.
+14:12:27.484 11939 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.rose.configurator.Configurator@456d9d5c for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts.
+14:12:27.531 11986 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer fr.liglab.adele.icasa.simulator.script.executor.impl.ScriptExecutorImpl@3d7bf6ba for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts.
+14:12:27.715 12170 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf configuration: mode=HTML5, ttl=1
+14:12:27.853 12308 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.tracker.TemplateDeployer - Starting thymeleaf template deployer
+14:12:27.853 12308 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.tracker.TemplateDeployer - Template directory set to C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates
+14:12:27.868 12323 [[iPOJO] pool-1-thread-1] DEBUG o.o.c.c.activators.DirectoryMonitor - Creating file alteration monitor for C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates with a polling period of 2000
+14:12:27.868 12323 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.BundleDeployer@c8c12ac for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates.
+14:12:27.868 12323 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.core.activators.ConfigDeployer@7b139eab for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates.
+14:12:27.868 12323 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.configuration.ApplicationConfigurationImpl$ConfigurationDeployer@7bbe2549 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates.
+14:12:27.900 12355 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.resources.WebJarDeployer@7a7739f5 for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates.
+14:12:27.900 12355 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.ow2.chameleon.rose.configurator.Configurator@456d9d5c for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates.
+14:12:27.900 12355 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer fr.liglab.adele.icasa.simulator.script.executor.impl.ScriptExecutorImpl@3d7bf6ba for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates.
+14:12:27.952 12407 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.template.thymeleaf.tracker.TemplateDeployer@4bfb268d for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\runtime.
+14:12:27.967 12422 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.template.thymeleaf.tracker.TemplateDeployer@4bfb268d for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications.
+14:12:27.971 12426 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.template.thymeleaf.tracker.TemplateDeployer@4bfb268d for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\conf.
+14:12:27.980 12435 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.template.thymeleaf.tracker.TemplateDeployer@4bfb268d for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\scripts.
+14:12:28.005 12460 [[iPOJO] pool-1-thread-1] INFO  o.o.c.c.activators.DirectoryMonitor - Opening deployer org.wisdom.template.thymeleaf.tracker.TemplateDeployer@4bfb268d for directory C:\Users\koul1o\iCasa\icasa.teaching.distribution\templates.
+14:12:28.018 12473 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.tracker.TemplateTracker - Starting Thymeleaf template tracker
+14:12:28.053 12508 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.resources.AssetController@a9eaeb4
+14:12:28.069 12524 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.remote.wisdom.impl.iCasaREST@408e1685
+14:12:28.088 12543 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.remote.wisdom.impl.DeviceREST@2116d6ab
+14:12:28.104 12559 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.application.remote.ApplicationREST@9d5621e
+14:12:28.118 12573 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.frontend.services.rest.MapRemoteServiceImpl@31ecefdd
+14:12:28.118 12573 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.remote.wisdom.impl.ZoneREST@41281d00
+14:12:28.118 12573 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.remote.wisdom.impl.ClockREST@7d693a33
+14:12:28.118 12573 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.resources.WebJarController@11f77fdd
+14:12:28.118 12573 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.access.impl.AccessManagerRemote@566c3769
+14:12:28.169 12624 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.simulator.remote.wisdom.impl.PersonREST@66d81729
+14:12:28.185 12640 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.simulator.remote.wisdom.impl.RemoteShell@aa0f62c
+14:12:28.203 12658 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.simulator.remote.wisdom.impl.ScriptPlayerREST@d670306
+14:12:28.220 12675 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.simulator.remote.wisdom.impl.SimulationREST@6d0ab1bf
+14:12:28.229 12684 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.resources.AssetsSingleton@339cb05c
+14:12:28.269 12724 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://82.0:0/templates/assets/list.thl.html
+14:12:28.269 12724 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/bundles.thl.html
+14:12:28.300 12755 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/controllers.thl.html
+14:12:28.300 12755 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/dashboard.thl.html
+14:12:28.316 12771 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/executors.thl.html
+14:12:28.332 12787 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/ipojo.thl.html
+14:12:28.349 12804 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/layout.thl.html
+14:12:28.369 12824 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/loggers.thl.html
+14:12:28.385 12840 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/login.thl.html
+14:12:28.401 12856 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/routes.thl.html
+14:12:28.431 12886 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/services.thl.html
+14:12:28.448 12903 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/terminal.thl.html
+14:12:28.454 12909 [[iPOJO] pool-1-thread-1] INFO  o.w.t.t.ThymeleafTemplateCollector - Thymeleaf template added for bundle://101.0:0/templates/monitor/tiles.thl.html
+14:12:28.500 12955 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.dashboard.servlet.SimulatorMainPage@3059151b
+14:12:28.532 12987 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.dashboard.servlet.SimulatorMap@7f8ca5da
+14:12:28.610 13065 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.executors.Creator - Creating executor wisdom-system-executor
+14:12:28.649 13104 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.executors.Creator - Creating scheduler wisdom-system-scheduler
+14:12:28.710 13165 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - Reconfiguring the Wisdom Mailer
+14:12:28.725 13180 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - Configuring Wisdom Mailer with:
+14:12:28.725 13180 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtps.quitwait: false
+14:12:28.725 13180 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.port: 465
+14:12:28.743 13198 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.socketFactory.port: 465
+14:12:28.748 13203 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+14:12:28.751 13206 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.host: smtp.gmail.com
+14:12:28.770 13225 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.auth: true
+14:12:28.770 13225 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	username: icasa.orange@gmail.com
+14:12:28.770 13225 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	password set but not displayed
+14:12:28.770 13225 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	from: icasa.orange@gmail.com
+14:12:28.770 13225 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - Configuring Wisdom Mailer with:
+14:12:28.770 13225 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtps.quitwait: false
+14:12:28.785 13240 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.port: 465
+14:12:28.828 13283 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.socketFactory.port: 465
+14:12:28.855 13310 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+14:12:28.862 13317 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.host: smtp.gmail.com
+14:12:28.866 13321 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	mail.smtp.auth: true
+14:12:28.867 13322 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	username: icasa.orange@gmail.com
+14:12:28.869 13324 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	password set but not displayed
+14:12:28.901 13356 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.mailer.Smtp - 	from: icasa.orange@gmail.com
+14:12:29.004 13459 [[iPOJO] pool-1-thread-1] INFO  o.w.c.jackson.JacksonSingleton - Adding JSON module ManagedExecutorService Module
+14:12:29.024 13479 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.ipojo.IPOJOController@1e8ea7c9
+14:12:29.040 13495 [[iPOJO] pool-1-thread-1] INFO  o.w.c.jackson.JacksonSingleton - Adding JSON module org.wisdom.monitor.service.MonitorExtension
+14:12:29.049 13504 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.MonitorCenter@399f5176
+14:12:29.102 13557 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.logger.LoggerExtension@6ea06d27
+14:12:29.131 13586 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.osgi.BundleMonitorExtension@3a987e4d
+14:12:29.173 13628 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.osgi.ServiceMonitorExtension@6913313b
+14:12:29.306 13761 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.wisdom.ControllerExtension@2b4353cf
+14:12:29.349 13804 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.wisdom.RouterExtension@7da5e558
+14:12:30.009 14464 [[iPOJO] pool-1-thread-1] INFO  o.w.f.vertx.WisdomVertxServer - Starting the vert.x server
+14:12:30.181 14636 [vert.x-eventloop-thread-0] INFO  o.w.f.vertx.WisdomVertxServer - Wisdom is going to serve HTTP requests on port 9000.
+14:12:30.181 14636 [[iPOJO] pool-1-thread-1] INFO  o.w.m.e.d.DashboardExtension - Registering JVM metrics
+14:12:30.212 14667 [[iPOJO] pool-1-thread-1] INFO  o.w.m.e.d.DashboardExtension - Registering HTTP metrics
+14:12:30.243 14698 [[iPOJO] pool-1-thread-1] INFO  o.w.m.e.d.DashboardExtension - Initializing Metrics JMX reporting
+14:12:30.243 14698 [[iPOJO] pool-1-thread-1] INFO  o.w.m.e.d.DashboardExtension - Registering the metric registry as service
+14:12:30.266 14721 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.executors.ExecutorExtension@7000e3a4
+14:12:30.323 14778 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.dashboard.DashboardExtension@381b27be
+14:12:30.365 14820 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from org.wisdom.monitor.extensions.terminal.WisitShellController@755273c9
+14:12:30.412 14867 [[iPOJO] pool-1-thread-1] INFO  org.wisdom.router.RequestRouter - Adding routes from fr.liglab.adele.icasa.remote.wisdom.impl.EventBroadcast@2c796169
+14:12:30.789 15244 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.s.z.d.c.i.ZoneDimensionImpl - The dimension service is starting
+14:12:30.896 15351 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.s.s.i.SchedulerTechnicalService -  Scheduled Runnable 1022
+14:12:30.930 15385 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.s.s.i.SchedulerTechnicalService -  Scheduled Runnable 1024
+14:12:30.988 15443 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.s.s.i.SchedulerTechnicalService -  Scheduled Runnable 1027
+14:12:43.476 27931 [monitor-applications] INFO  o.o.c.c.activators.DirectoryMonitor - File C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent1-0.0.3-SNAPSHOT.jar created in C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications
+14:12:43.476 27931 [monitor-applications] DEBUG o.o.c.c.activators.DirectoryMonitor - Deployer handling creation of parent1-0.0.3-SNAPSHOT.jar : [org.ow2.chameleon.core.activators.BundleDeployer@c8c12ac, org.wisdom.resources.WebJarDeployer@7a7739f5]
+14:12:43.476 27931 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - File creation event received for C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent1-0.0.3-SNAPSHOT.jar
+14:12:43.476 27931 [monitor-applications] INFO  o.o.c.c.activators.BundleDeployer - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent1-0.0.3-SNAPSHOT.jar
+14:12:43.492 27947 [monitor-applications] INFO  o.o.c.c.activators.BundleDeployer - Starting bundle parent1 - C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent1-0.0.3-SNAPSHOT.jar
+14:12:43.523 27978 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Trying to start bundle follow.me.manager after having installed bundle parent1
+14:12:43.561 28016 [[iPOJO] pool-1-thread-1] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING] ter.adele.energySensor.energySensorService : No service interface found in the class hierarchy, use the implementation class
+14:12:43.577 28032 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Trying to start bundle energySensor.command after having installed bundle parent1
+14:12:43.772 28227 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Trying to start bundle follow.me.comand after having installed bundle parent1
+14:12:43.819 28274 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Trying to start bundle BinaryLightFollowMe after having installed bundle parent1
+14:12:43.897 28352 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Trying to start bundle energySensor after having installed bundle parent1
+14:12:43.906 28361 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Failed to start bundle energySensor after having installed bundle parent1
+org.osgi.framework.BundleException: Unresolved constraint in bundle energySensor [54]: Unable to resolve 54.0: missing requirement [54.0] osgi.wiring.package; (osgi.wiring.package=com.ibm.iotf.client.app)
+	at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:4097) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2114) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:977) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:964) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.tryToStartUnstartedBundles(BundleDeployer.java:171) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.onFileCreate(BundleDeployer.java:151) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor$FileMonitor.onFileCreate(DirectoryMonitor.java:484) [chameleon-core-1.10.8.jar:na]
+	at org.apache.commons.io.monitor.FileAlterationObserver.doCreate(FileAlterationObserver.java:379) [commons-io-2.4.jar:2.4]
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:345) [commons-io-2.4.jar:2.4]
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:304) [commons-io-2.4.jar:2.4]
+	at org.apache.commons.io.monitor.FileAlterationMonitor.run(FileAlterationMonitor.java:182) [commons-io-2.4.jar:2.4]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_77]
+14:12:43.908 28363 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.c.handler.CommandHandler - start the shell handler
+14:12:44.119 28574 [monitor-applications] INFO  o.o.c.c.activators.DirectoryMonitor - File C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent2-0.0.3-SNAPSHOT.jar created in C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications
+14:12:44.147 28602 [monitor-applications] DEBUG o.o.c.c.activators.DirectoryMonitor - Deployer handling creation of parent2-0.0.3-SNAPSHOT.jar : [org.ow2.chameleon.core.activators.BundleDeployer@c8c12ac, org.wisdom.resources.WebJarDeployer@7a7739f5]
+14:12:44.173 28628 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.c.handler.CommandHandler - start the shell handler
+14:12:44.174 28629 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - File creation event received for C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent2-0.0.3-SNAPSHOT.jar
+14:12:44.307 28762 [monitor-applications] INFO  o.o.c.c.activators.BundleDeployer - Installing bundle from C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent2-0.0.3-SNAPSHOT.jar
+14:12:44.365 28820 [monitor-applications] INFO  o.o.c.c.activators.BundleDeployer - Starting bundle parent2 - C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\parent2-0.0.3-SNAPSHOT.jar
+14:12:44.389 28844 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Trying to start bundle energySensor after having installed bundle parent2
+14:12:44.397 28852 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Failed to start bundle energySensor after having installed bundle parent2
+org.osgi.framework.BundleException: Unresolved constraint in bundle energySensor [54]: Unable to resolve 54.0: missing requirement [54.0] osgi.wiring.package; (osgi.wiring.package=com.ibm.iotf.client.app)
+	at org.apache.felix.framework.Felix.resolveBundleRevision(Felix.java:4097) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.Felix.startBundle(Felix.java:2114) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:977) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.apache.felix.framework.BundleImpl.start(BundleImpl.java:964) ~[org.apache.felix.framework-4.6.1.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.tryToStartUnstartedBundles(BundleDeployer.java:171) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.BundleDeployer.onFileCreate(BundleDeployer.java:151) [chameleon-core-1.10.8.jar:na]
+	at org.ow2.chameleon.core.activators.DirectoryMonitor$FileMonitor.onFileCreate(DirectoryMonitor.java:484) [chameleon-core-1.10.8.jar:na]
+	at org.apache.commons.io.monitor.FileAlterationObserver.doCreate(FileAlterationObserver.java:379) [commons-io-2.4.jar:2.4]
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:345) [commons-io-2.4.jar:2.4]
+	at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:304) [commons-io-2.4.jar:2.4]
+	at org.apache.commons.io.monitor.FileAlterationMonitor.run(FileAlterationMonitor.java:182) [commons-io-2.4.jar:2.4]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_77]
+14:12:44.447 28902 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.c.handler.CommandHandler - start the shell handler
+14:16:27.251 251706 [monitor-applications] INFO  o.o.c.c.activators.DirectoryMonitor - File C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\momentOfTheDay.jar from C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications changed
+14:16:27.252 251707 [monitor-applications] DEBUG o.o.c.c.activators.DirectoryMonitor - Deployers handling change in momentOfTheDay.jar : [org.ow2.chameleon.core.activators.BundleDeployer@c8c12ac, org.wisdom.resources.WebJarDeployer@7a7739f5]
+14:16:27.252 251707 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - File creation event received for C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\momentOfTheDay.jar
+14:16:27.268 251723 [monitor-applications] INFO  o.o.c.c.activators.BundleDeployer - Updating bundle momentOfTheDay - C:\Users\koul1o\iCasa\icasa.teaching.distribution\applications\momentOfTheDay.jar
+14:16:27.283 251738 [monitor-applications] INFO  f.l.a.i.s.s.i.SchedulerTechnicalService -  UnScheduled Runnable 1027
+14:16:27.397 251852 [monitor-applications] WARN  o.o.u.log.impl.osgi.LoggerService - [WARNING]  : [BinaryFollowMe-6] The dependency is not optional, however no service object can be injected in motdService -> org.example.time.MomentOfTheDayService
+14:16:27.514 251969 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Refreshing bundles to cleanup stale references
+14:16:27.516 251971 [[iPOJO] pool-1-thread-1] INFO  f.l.a.i.s.s.i.SchedulerTechnicalService -  Scheduled Runnable 1062
+14:16:27.517 251972 [monitor-applications] DEBUG o.o.c.c.activators.BundleDeployer - Trying to start bundle energySensor after having installed bundle momentOfTheDay
+14:16:27.962 252417 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.MonitorCenter@399f5176
+14:16:27.962 252417 [FelixFrameworkWiring] INFO  o.w.c.jackson.JacksonSingleton - Removing Jackson module org.wisdom.monitor.service.MonitorExtension
+14:16:27.978 252433 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.dashboard.DashboardExtension@381b27be
+14:16:27.993 252448 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.executors.ExecutorExtension@7000e3a4
+14:16:28.058 252513 [FelixFrameworkWiring] INFO  o.w.c.jackson.JacksonSingleton - Removing Jackson module ManagedExecutorService Module
+14:16:28.062 252517 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.ipojo.IPOJOController@1e8ea7c9
+14:16:28.091 252546 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.logger.LoggerExtension@6ea06d27
+14:16:28.102 252557 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.osgi.BundleMonitorExtension@3a987e4d
+14:16:28.118 252573 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.osgi.ServiceMonitorExtension@6913313b
+14:16:28.162 252617 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.terminal.WisitShellController@755273c9
+14:16:28.178 252633 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.wisdom.ControllerExtension@2b4353cf
+14:16:28.194 252649 [FelixFrameworkWiring] INFO  org.wisdom.router.RequestRouter - Removing routes from org.wisdom.monitor.extensions.wisdom.RouterExtension@7da5e558
+14:16:28.294 252749 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/bundles.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.309 252764 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/controllers.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.325 252780 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/dashboard.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.325 252780 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/executors.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.340 252795 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/ipojo.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.340 252795 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/layout.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.362 252817 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/loggers.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.363 252818 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/login.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.363 252818 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/routes.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.378 252833 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/services.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.378 252833 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/terminal.thl.html from org.wisdom.framework.wisdom.monitor
+14:16:28.394 252849 [FelixFrameworkWiring] INFO  o.w.t.t.tracker.TemplateTracker - Thymeleaf template deleted for bundle://101.0:0/templates/monitor/tiles.thl.html from org.wisdom.framework.wisdom.monitor
