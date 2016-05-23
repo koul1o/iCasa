@@ -40,10 +40,55 @@
             <type>osgi-distribution</type>
         </dependency>
 
+        <!--Energy Sensor Project-->
+        <dependency>
+            <groupId>fr.liglab.adele.icasa.energy.sensor</groupId>
+            <artifactId>energy.sensor</artifactId>
+            <version>1.2.7-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Watson Bundlify -->
         <dependency>
             <groupId>fr.liglab.adele.icasa.energy.sensor</groupId>
             <artifactId>energy.sensor.iot.library</artifactId>
             <version>1.2.7-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Watson Dependency -->
+        <dependency>
+            <groupId>org.eclipse.paho</groupId>
+            <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+            <version>1.0.3-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient-osgi</artifactId>
+            <version>4.5.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore-osgi</artifactId>
+            <version>4.4.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
         </dependency>
 
         <dependency>
@@ -52,11 +97,6 @@
             <version>2.6.2</version>
         </dependency>
 
-        <dependency>
-            <groupId>fr.liglab.adele.icasa.energy.sensor</groupId>
-            <artifactId>energy.sensor</artifactId>
-            <version>1.2.7-SNAPSHOT</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
