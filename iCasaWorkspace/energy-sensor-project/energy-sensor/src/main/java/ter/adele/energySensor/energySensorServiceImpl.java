@@ -3,10 +3,7 @@ package ter.adele.energySensor;
 import com.google.gson.JsonObject;
 import fr.liglab.adele.icasa.device.PowerObservable;
 import fr.liglab.adele.icasa.service.scheduler.PeriodicRunnable;
-import org.apache.felix.ipojo.annotations.Component;
-import org.apache.felix.ipojo.annotations.Instantiate;
-import org.apache.felix.ipojo.annotations.Provides;
-import org.apache.felix.ipojo.annotations.Requires;
+import org.apache.felix.ipojo.annotations.*;
 
 import java.util.List;
 import java.util.Map;
@@ -22,7 +19,7 @@ public class energySensorServiceImpl implements energySensorService, PeriodicRun
 	private String location;
 	/** Field for observables dependency */
 
-	@Requires(optional = true)
+	@Requires(id = "power",optional = true,specification = PowerObservable.class)
 	private List<PowerObservable> observables;
 
 	@Override
@@ -37,14 +34,14 @@ public class energySensorServiceImpl implements energySensorService, PeriodicRun
 
 
 
-	/** Bind Method for observables dependency */
+	@Bind(id = "power")
 	public void bindObservables(PowerObservable powerObservable, Map properties) {
-		// TODO: Add your implementation code here
+
 	}
 
-	/** Unbind Method for observables dependency */
+	@Unbind(id = "power")
 	public void unbindObservables(PowerObservable powerObservable, Map properties) {
-		// TODO: Add your implementation code here
+		
 	}
 
 	/** Component Lifecycle Method */
