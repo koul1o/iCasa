@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: fr.liglab.adele.common:rose-chameleon-deployer-configurator:1.2.7-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/common/rose-chameleon-deployer-configurator/1.2.7-SNAPSHOT/rose-chameleon-deployer-configurator-1.2.7-20160519.065526-92.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/common/rose-chameleon-deployer-configurator/1.2.7-SNAPSHOT/rose-chameleon-deployer-configurator-1.2.7-20160519.065526-92-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/common/rose-chameleon-deployer-configurator/1.2.7-SNAPSHOT/rose-chameleon-deployer-configurator-1.2.7-20160519.065526-92-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

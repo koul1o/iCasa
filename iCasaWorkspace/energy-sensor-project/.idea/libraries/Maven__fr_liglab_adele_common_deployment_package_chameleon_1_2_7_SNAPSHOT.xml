@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: fr.liglab.adele.common:deployment.package.chameleon:1.2.7-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/common/deployment.package.chameleon/1.2.7-SNAPSHOT/deployment.package.chameleon-1.2.7-20160519.065523-92.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/common/deployment.package.chameleon/1.2.7-SNAPSHOT/deployment.package.chameleon-1.2.7-20160519.065523-92-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/common/deployment.package.chameleon/1.2.7-SNAPSHOT/deployment.package.chameleon-1.2.7-20160519.065523-92-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

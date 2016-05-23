@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2013 OW2 Chameleon
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~  http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+ <parent>
+    <groupId>fr.liglab.adele.icasa</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.2.7-SNAPSHOT</version>    
+  </parent>
+
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>fr.liglab.adele.icasa.energy.sensor</groupId>
+    <artifactId>energy.sensor.parent</artifactId>
+    <version>1.2.7-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>iot-fundation-library-bundlify</module>
+        <module>energy-sensor</module>
+        <module>energy-sensor-distribution</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>chameleon</id>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <url>http://repository.ow2.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+
+        <!-- ADELE repositories -->
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>adele-central-release</id>
+            <name>adele-repos</name>
+            <url>http://repository-icasa.forge.cloudbees.com/release</url>
+        </repository>
+        <repository>
+            <snapshots />
+            <id>adele-central-snapshots</id>
+            <name>adele-central-snapshot</name>
+            <url>http://repository-icasa.forge.cloudbees.com/snapshot</url>
+        </repository>
+
+    </repositories>
+
+</project>

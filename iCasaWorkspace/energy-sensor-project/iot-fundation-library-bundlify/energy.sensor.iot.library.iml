@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="energy.sensor.iot.library-1.2.7-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="energy.sensor.iot.library" bundleVersion="1.2.7-SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Bundle-Description" value="${project.name}" />
+          <property key="Bundle-Vendor" value="ADELE Research Group" />
+          <property key="Bundle-DocURL" value="https://github.com/AdeleResearchGroup/" />
+          <property key="Export-Package" value="com.ibm.iotf.*" />
+          <property key="Private-Package" value="com.ibm.internal" />
+          <property key="Embed-Dependency" value="*;inline=true" />
+          <property key="Include-Resource" value="@$MAVEN_REPOSITORY$/com/ibm/messaging/watson-iot/0.1.0/watson-iot-0.1.0.jar,@$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.6.1/gson-2.6.1.jar,@$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar,@$MAVEN_REPOSITORY$/org/eclipse/paho/org.eclipse.paho.client.mqttv3/1.0.3-SNAPSHOT/org.eclipse.paho.client.mqttv3-1.0.3-SNAPSHOT.jar,@$MAVEN_REPOSITORY$/commons-net/commons-net/3.3/commons-net-3.3.jar,@$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar,@$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar,@$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar,@$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.1/httpclient-4.5.1.jar,@$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.3/httpcore-4.4.3.jar,@$MAVEN_REPOSITORY$/joda-time/joda-time/2.7/joda-time-2.7.jar,META-INF/LICENSE=${project.parent.basedir}/LICENSE,META-INF/NOTICE=$MODULE_DIR$/NOTICE" />
+          <property key="Bundle-Name" value="${project.name}" />
+          <property key="Bundle-RequiredExecutionEnvironment" value="J2SE-1.5" />
+          <property key="Bundle-Copyright" value="Copyright 2011-2012 Joseph Fourier University" />
+          <property key="Bundle-License" value="iCasa-Simulator User License Agreement;link= http://adeleresearchgroup.github.com/iCasa-Simulator/snapshot/license.html" />
+          <property key="-noee" value="true" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.ibm.messaging:watson-iot:0.1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.6.1" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.3-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: commons-net:commons-net:3.3" level="project" />
+    <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.3" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.7" level="project" />
+  </component>
+  <component name="sonarModuleSettings">
+    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
+    <option name="serverName" value="&lt;PROJECT&gt;" />
+  </component>
+</module>

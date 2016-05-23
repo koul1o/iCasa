@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: fr.liglab.adele.icasa:access.manager.impl:1.2.7-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/icasa/access.manager.impl/1.2.7-SNAPSHOT/access.manager.impl-1.2.7-20160520.084006-74.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/icasa/access.manager.impl/1.2.7-SNAPSHOT/access.manager.impl-1.2.7-20160520.084006-74-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/fr/liglab/adele/icasa/access.manager.impl/1.2.7-SNAPSHOT/access.manager.impl-1.2.7-20160520.084006-74-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

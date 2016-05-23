@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/energy-sensor/energy.sensor.iml" filepath="$PROJECT_DIR$/energy-sensor/energy.sensor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/energy-sensor-distribution/energy.sensor.distribution.iml" filepath="$PROJECT_DIR$/energy-sensor-distribution/energy.sensor.distribution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iot-fundation-library-bundlify/energy.sensor.iot.library.iml" filepath="$PROJECT_DIR$/iot-fundation-library-bundlify/energy.sensor.iot.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/energy.sensor.parent.iml" filepath="$PROJECT_DIR$/energy.sensor.parent.iml" />
+    </modules>
+  </component>
+</project>
