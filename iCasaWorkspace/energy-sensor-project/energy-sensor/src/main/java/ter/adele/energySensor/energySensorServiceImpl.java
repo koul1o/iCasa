@@ -1,17 +1,24 @@
 package ter.adele.energySensor;
 
-import com.google.gson.JsonObject;
-import fr.liglab.adele.icasa.device.PowerObservable;
-import fr.liglab.adele.icasa.service.scheduler.PeriodicRunnable;
-import org.apache.felix.ipojo.annotations.*;
-
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.felix.ipojo.annotations.Bind;
+import org.apache.felix.ipojo.annotations.Component;
+import org.apache.felix.ipojo.annotations.Instantiate;
+import org.apache.felix.ipojo.annotations.Provides;
+import org.apache.felix.ipojo.annotations.Requires;
+import org.apache.felix.ipojo.annotations.Unbind;
+
+import com.google.gson.JsonObject;
+
+import fr.liglab.adele.icasa.device.PowerObservable;
+import fr.liglab.adele.icasa.service.scheduler.PeriodicRunnable;
+
 @Component
 @Provides
-@Instantiate(name = "SensorServiceInstance")
+@Instantiate(name = "energySensor sensorService")
 public class energySensorServiceImpl implements energySensorService, PeriodicRunnable {
 
 	private String MotD;
@@ -19,7 +26,7 @@ public class energySensorServiceImpl implements energySensorService, PeriodicRun
 	private String location;
 	/** Field for observables dependency */
 
-	@Requires(id = "power",optional = true,specification = PowerObservable.class)
+	@Requires(id = "power", optional = true, specification = PowerObservable.class)
 	private List<PowerObservable> observables;
 
 	@Override
@@ -32,8 +39,6 @@ public class energySensorServiceImpl implements energySensorService, PeriodicRun
 		this.MotD = motD;
 	}
 
-
-
 	@Bind(id = "power")
 	public void bindObservables(PowerObservable powerObservable, Map properties) {
 
@@ -41,7 +46,7 @@ public class energySensorServiceImpl implements energySensorService, PeriodicRun
 
 	@Unbind(id = "power")
 	public void unbindObservables(PowerObservable powerObservable, Map properties) {
-		
+
 	}
 
 	/** Component Lifecycle Method */

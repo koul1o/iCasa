@@ -12,11 +12,7 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
-  -->
-
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
  <parent>
     <groupId>fr.liglab.adele.icasa</groupId>
@@ -36,8 +32,13 @@
     <modules>
         <module>iot-fundation-library-bundlify</module>
         <module>energy-sensor</module>
+        <module>energy-sensor-followMe</module>
+    <module>energy.sensor.momentOfTheDay</module>
+    <module>energy.sensor.commands</module>
+    <module>energy.sensor.manager</module>
         <module>energy-sensor-distribution</module>
-    </modules>
+        
+  </modules>
 
     <repositories>
         <repository>
@@ -58,7 +59,7 @@
             <url>http://repository-icasa.forge.cloudbees.com/release</url>
         </repository>
         <repository>
-            <snapshots />
+            <snapshots/>
             <id>adele-central-snapshots</id>
             <name>adele-central-snapshot</name>
             <url>http://repository-icasa.forge.cloudbees.com/snapshot</url>

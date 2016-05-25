@@ -96,7 +96,27 @@
             <artifactId>gson</artifactId>
             <version>2.6.2</version>
         </dependency>
-
+        
+          <dependency>
+            <groupId>fr.liglab.adele.icasa.energy.sensor</groupId>
+            <artifactId>energy.sensor.momentOfTheDay</artifactId>
+            <version>1.2.7-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.liglab.adele.icasa.energy.sensor</groupId>
+            <artifactId>energy.sensor.followMe</artifactId>
+            <version>1.2.7-SNAPSHOT</version>
+        </dependency>
+             <dependency>
+            <groupId>fr.liglab.adele.icasa.energy.sensor</groupId>
+            <artifactId>energy.sensor.manager</artifactId>
+            <version>1.2.7-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>fr.liglab.adele.icasa.energy.sensor</groupId>
+            <artifactId>energy.sensor.commands</artifactId>
+            <version>1.2.7-SNAPSHOT</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

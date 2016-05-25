@@ -30,7 +30,9 @@
 			<artifactId>watson-iot</artifactId>
 			<version>0.1.0</version>
 		</dependency>
+
 	</dependencies>
+
 
 	<build>
 		<plugins>
@@ -44,7 +46,7 @@
 						<Bundle-SymbolicName>
 							${project.artifactId}
 						</Bundle-SymbolicName>
-						<Export-Package>com.ibm.iotf.*</Export-Package>
+						<Export-Package>com.ibm.iotf.client.app</Export-Package>
 						<Private-Package>com.ibm.internal.*</Private-Package>
 						<Embed-Dependency>*;inline=true</Embed-Dependency>
 					</instructions>
